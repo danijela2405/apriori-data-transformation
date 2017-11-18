@@ -1,0 +1,17 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                    http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+
+    <entity name="Alarm" table="alarm">
+        <id name="id" type="integer">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <field name="timestamp" type="datetime"/>
+        <field name="cameraId" column="camera_id" type="integer"/>
+        <field name="cameraPosition" column="camera_position" type="string"/>
+        <field name="logicCameraId" column="logic_camera_id" type="integer"/>
+        <field name="presetName" column="preset_name" type="string"/>
+    </entity>
+</doctrine-mapping>

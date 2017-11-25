@@ -1,4 +1,5 @@
 <?php
+
 namespace Import\Factory;
 
 use Alarm;
@@ -11,31 +12,27 @@ use Import\Helper\DateTimeHelper;
 class AlarmFactory
 {
     /**
-     * @param $time
-     * @param $date
-     * @param $idCamera
-     * @param $cameraPosition
-     * @param $idLogicCamera
-     * @param $presetName
+     * @param array $alarmArray
+     * @param Alarm $alarm
      * @return Alarm
      */
-    public static function setAlarmEntity(
-        $time,
-        $date,
-        $idCamera,
-        $cameraPosition,
-        $idLogicCamera,
-        $presetName
-    ) {
+    public static function saveAlarm(array $alarmArray, Alarm $alarm)
+    {
 
-        $alarm = new Alarm();
-
-        $alarm->setTimestamp(DateTimeHelper::prepareDateTime($date, $time));
-        $alarm->setCameraId($idCamera);
-        $alarm->setCameraPosition($cameraPosition);
-        $alarm->setLogicCameraId($idLogicCamera);
-        $alarm->setPresetName($presetName);
+        $alarm->setTimestamp(DateTimeHelper::prepareDateTime($alarmArray[1], $alarmArray[0]));
+        $alarm->setCameraId($alarmArray[2]);
+        $alarm->setCameraPosition($alarmArray[3]);
+        $alarm->setLogicCameraId($alarmArray[4]);
+        $alarm->setPresetName($alarmArray[5]);
 
         return $alarm;
+    }
+
+    /**
+     * @return Alarm
+     */
+    public static function createAlarm()
+    {
+        return new Alarm();
     }
 }

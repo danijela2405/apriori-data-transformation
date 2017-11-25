@@ -3,6 +3,7 @@
 namespace Import;
 
 use Doctrine\ORM\EntityManager;
+use Import\Factory\AlarmFactory;
 use Import\Helper\PhpExcelHelper;
 
 /**
@@ -33,28 +34,34 @@ class ImportCsv
     }
 
     /**
-     *
+     * Reads from .cvs, transforms the data and saves it to database
      */
     public function importCsvFileIntoDb()
     {
-        $rowCount = $this->phpExcelHelper->getRowCount();
+        $alarmsArray = $this->phpExcelHelper->getActiveSheet()->toArray();
+        echo "\r\n ---------- Loaded csv into an array! ---------- \r\n\r\n";
+        unset($alarmsArray[0]);
 
-        for ($row = 2; $row <= $rowCount; $row++) {
+        $alarmToPersist = AlarmFactory::createAlarm();
 
-            $alarm = $this->phpExcelHelper->saveAlarm($row);
-            $this->entityManager->persist($alarm);
+        foreach ($alarmsArray as $row => $alarm) {
 
-            unset($alarm);
-            echo "Importing alarm no. ".($row-1)."\r\n";
+            $alarmToPersist = AlarmFactory::saveAlarm($alarm, $alarmToPersist);
+            $this->entityManager->persist($alarmToPersist);
 
-            if($row%50 == 0){
+            if ($row % 64 == 0) {
                 $this->entityManager->flush();
             }
         }
 
         $this->entityManager->flush();
+
+        echo "Finally finished!";
     }
 
+    /**
+     * Removes existing data from database so data is not duplicated
+     */
     private function removeExistingAlarmsFromDb()
     {
         $alarmRepository = $this->entityManager->getRepository('Alarm');

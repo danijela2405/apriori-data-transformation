@@ -18,14 +18,14 @@ class AlarmFactory
      */
     public static function saveAlarm(array $alarmArray, Alarm $alarm)
     {
+        $newAlarm = clone $alarm;
+        $newAlarm->setTimestamp(DateTimeHelper::prepareDateTime($alarmArray[1], $alarmArray[0]));
+        $newAlarm->setCameraId($alarmArray[2]);
+        $newAlarm->setCameraPosition($alarmArray[3]);
+        $newAlarm->setLogicCameraId($alarmArray[4]);
+        $newAlarm->setPresetName($alarmArray[5]);
 
-        $alarm->setTimestamp(DateTimeHelper::prepareDateTime($alarmArray[1], $alarmArray[0]));
-        $alarm->setCameraId($alarmArray[2]);
-        $alarm->setCameraPosition($alarmArray[3]);
-        $alarm->setLogicCameraId($alarmArray[4]);
-        $alarm->setPresetName($alarmArray[5]);
-
-        return $alarm;
+        return $newAlarm;
     }
 
     /**

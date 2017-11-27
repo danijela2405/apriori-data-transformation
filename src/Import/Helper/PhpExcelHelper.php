@@ -29,7 +29,7 @@ class PhpExcelHelper
 
         $this->objPHPExcel = PHPExcel_IOFactory::load($inputFileName);
 
-        echo "Finished .loading csv file!\r\n";
+        echo "Finished .loading csv file!\r\n------------------------------ \r\n";
     }
 
     public function getRowCount()

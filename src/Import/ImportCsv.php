@@ -38,8 +38,10 @@ class ImportCsv
      */
     public function importCsvFileIntoDb()
     {
+        $counter = 0;
+        $timeStart = microtime(1);
         $alarmsArray = $this->phpExcelHelper->getActiveSheet()->toArray();
-        echo "\r\n ---------- Loaded csv into an array! ---------- \r\n\r\n";
+        echo "\r\nLoaded csv into an array... \r\n------------------------------ \r\n";
         unset($alarmsArray[0]);
 
         $alarmToPersist = AlarmFactory::createAlarm();
@@ -50,13 +52,29 @@ class ImportCsv
             $this->entityManager->persist($alarmToPersist);
 
             if ($row % 64 == 0) {
+                echo "Saved ".($counter=$counter+64)." alarms\r\n";
                 $this->entityManager->flush();
             }
         }
 
         $this->entityManager->flush();
 
-        echo "Finally finished!";
+        $duration = round((microtime(1)-$timeStart),2);
+
+        echo "Finally finished!\r\n";
+        echo "Time of execution: ".$duration." seconds. \r\n------------------------------ \r\n";
+    }
+
+    /**
+     * Reads from .cvs, transforms the data and saves it to database
+     */
+    public function getAll()
+    {
+        $alarmRepository = $this->entityManager->getRepository('Alarm');
+        $alarms = $alarmRepository->findAll();
+
+        echo count($alarms);
+
     }
 
     /**
@@ -78,6 +96,6 @@ class ImportCsv
 
         $this->entityManager->flush();
 
-        echo "Finished deleting previous imports!\r\n";
+        echo "Finished deleting previous imports!\r\n------------------------------ \r\n";
     }
 }

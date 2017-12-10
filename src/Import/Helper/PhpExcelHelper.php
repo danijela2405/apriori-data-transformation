@@ -23,7 +23,7 @@ class PhpExcelHelper
      */
     public function __construct()
     {
-        $inputFileName = __DIR__.'/../../Resources/alarms.csv';
+        $inputFileName = __DIR__.'/../../../web/alarms.csv';
 
         echo "Loading .csv file...\r\n";
 

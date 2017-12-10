@@ -8,12 +8,17 @@ class Alarm
     /**
      * @var int
      */
-    protected $id;
+    private $id;
 
     /**
-     * @var \DateTime
+     * @var
      */
-    private $timestamp;
+    private $date;
+    
+    /**
+     * @var 
+     */
+    private $time;
 
     /**
      * @var int
@@ -46,17 +51,31 @@ class Alarm
     /**
      * @return DateTime
      */
-    public function getTimestamp()
+    public function getTime()
     {
-        return $this->timestamp;
+        return $this->time;
     }
 
     /**
-     * @param $timestamp
+     * @param $time
      */
-    public function setTimestamp($timestamp)
+    public function setTime($time)
     {
-        $this->timestamp = $timestamp;
+        $this->time = $time;
+    }
+
+
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param $date
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
     }
 
     /**

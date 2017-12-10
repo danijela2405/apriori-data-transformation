@@ -5,14 +5,19 @@ use Doctrine\ORM\EntityManager;
 
 require_once "vendor/autoload.php";
 
-$isDevMode = true;
-// or if you prefer yaml or XML
-$config = Setup::createXMLMetadataConfiguration(array(__DIR__."/config/xml"), $isDevMode);
-
-$conn = array(
-    'driver' => 'pdo_sqlite',
-    'path' => __DIR__ . '/db.sqlite',
+$config = new \Doctrine\DBAL\Configuration();
+$connectionParams = array(
+    'dbname' => 'apriori-transformation',
+    'port' => '8000',
+    'user' => 'root',
+    'password' => 'root',
+    'host' => 'localhost',
+    'driver' => 'pdo_mysql',
 );
+$conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
 
-// obtaining the entity manager
-$entityManager = EntityManager::create($conn, $config);
+$paths = array(__DIR__ ."/config/xml");
+$isDevMode = true;
+
+$config = Setup::createXMLMetadataConfiguration($paths, $isDevMode);
+$entityManager = EntityManager::create($connectionParams, $config);

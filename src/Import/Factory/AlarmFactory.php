@@ -13,13 +13,13 @@ class AlarmFactory
 {
     /**
      * @param array $alarmArray
-     * @param Alarm $alarm
      * @return Alarm
      */
-    public static function saveAlarm(array $alarmArray, Alarm $alarm)
+    public static function saveAlarm(array $alarmArray)
     {
-        $newAlarm = clone $alarm;
-        $newAlarm->setTimestamp(DateTimeHelper::prepareDateTime($alarmArray[1], $alarmArray[0]));
+        $newAlarm = new Alarm();;
+        $newAlarm->setDate($alarmArray[0]);
+        $newAlarm->setTime($alarmArray[1]);
         $newAlarm->setCameraId($alarmArray[2]);
         $newAlarm->setCameraPosition($alarmArray[3]);
         $newAlarm->setLogicCameraId($alarmArray[4]);

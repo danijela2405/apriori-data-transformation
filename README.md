@@ -6,15 +6,17 @@ To run the project:
        * install composer from https://getcomposer.org/download/
        * run composer install
 
-To import data from csv into database, position yourself into src/ directory and run:
-
-       * php import.php
+       * Create a database called apriori-transformation.
        
-If you run out of memory while loading data, run the command in the following way:
+Position yourself into src directory of the project and run the following command: 
 
-       * php -d memory_limit=-1 import.php
+       * vendor/bin/doctrine orm:schema-tool:create
        
-To export data from database into csv, position yourself into src/ directory and run:
+If you want to remove all data from database run:
 
-       * php export.php
+        *  vendor/bin/doctrine orm:schema-tool:drop --force
+        *  vendor/bin/doctrine orm:schema-tool:create
+
+To import data from csv into database, go to localhost/import.php and follow instructions.
+
        

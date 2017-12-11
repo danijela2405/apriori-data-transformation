@@ -41,6 +41,11 @@ class Alarm
     protected $presetName;
 
     /**
+     * @var int
+     */
+    protected $transactionId;
+
+    /**
      * @return int
      */
     public function getId()
@@ -49,7 +54,7 @@ class Alarm
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getTime()
     {
@@ -119,11 +124,27 @@ class Alarm
     }
 
     /**
+     * @param $transactionId
+     */
+    public function setTransactionId($transactionId)
+    {
+        $this->logicCameraId = $transactionId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTransactionId()
+    {
+        return $this->transactionId;
+    }
+
+    /**
      * @param $logicCameraId
      */
     public function setLogicCameraId($logicCameraId)
     {
-        $this->logicCameraId = $logicCameraId;
+        $this->transactionId = $logicCameraId;
     }
 
     /**

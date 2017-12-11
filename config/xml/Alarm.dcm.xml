@@ -5,11 +5,12 @@
 
     <entity name="Alarm" table="alarm" repository-class="Repository/AlarmRepository">
         <id name="id" type="integer"/>
-        <id name="time" type="time"/>
+        <field name="time" type="time"/>
         <field name="date" type="date"/>
         <field name="cameraId" column="camera_id" type="integer"/>
         <field name="cameraPosition" column="camera_position" type="string"/>
         <field name="logicCameraId" column="logic_camera_id" type="integer"/>
         <field name="presetName" column="preset_name" type="string"/>
+        <field name="transactionId" column="transaction_id" type="integer" nullable="true"/>
     </entity>
 </doctrine-mapping>

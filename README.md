@@ -19,4 +19,6 @@ If you want to remove all data from database run:
 
 To import data from csv into database, go to localhost/import.php and follow instructions.
 
-       
+To generate transactions, run the following command from web folder (or visit localhost/generateTransactions.php)
+     
+        *   php generateTransations.php  

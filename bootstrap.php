@@ -20,4 +20,5 @@ $paths = array(__DIR__."/config/xml");
 $isDevMode = true;
 
 $config = Setup::createXMLMetadataConfiguration($paths, $isDevMode);
+$config->addCustomDatetimeFunction('date_format','DoctrineExtensions\Query\Mysql\DateFormat');
 $entityManager = EntityManager::create($connectionParams, $config);

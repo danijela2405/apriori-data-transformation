@@ -12,11 +12,11 @@ $connectionParams = array(
     'user' => 'root',
     'password' => 'root',
     'host' => 'localhost',
-    'driver' => 'pdo_mysql',
+    'driver' => 'pdo_mysql'
 );
 $conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
 
-$paths = array(__DIR__ ."/config/xml");
+$paths = array(__DIR__."/config/xml");
 $isDevMode = true;
 
 $config = Setup::createXMLMetadataConfiguration($paths, $isDevMode);

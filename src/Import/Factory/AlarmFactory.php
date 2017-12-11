@@ -3,7 +3,6 @@
 namespace Import\Factory;
 
 use Alarm;
-use Import\Helper\DateTimeHelper;
 
 /**
  * Class AlarmFactory

@@ -66,21 +66,22 @@ class AlarmRepository extends EntityRepository
         return $query->getQuery()->getResult();
     }
 
-    public function findTransactionByDateAndInterval(Alarm $alarm)
+    public function findTransactionByDateAndInterval(Alarm $alarm, $dailyAlarms)
     {
         $time = $alarm->getTime();
         $qb = $this->createQueryBuilder('a');
         $query =
             $qb
                 ->select("a")
-                ->where("DATE_FORMAT(a.date, '%Y-%m-%d') = :date")
+                ->where('a.id IN (:dailyAlarms)')
                 ->andWhere(
                     "ABS((:minutes - (DATE_FORMAT(a.time, '%i'))) + (:hours - (DATE_FORMAT(a.time, '%H')))*60)  <= :minutesInTransaction"
                 )
-                ->setParameter("date", $alarm->getDate()->format('Y-m-d'))
+                ->setParameter('dailyAlarms', $dailyAlarms)
                 ->setParameter("hours", $time->format('H'))
                 ->setParameter("minutes", $time->format('i'))
-                ->setParameter("minutesInTransaction", DateTimeHelper::$minutesInTransaction);
+                ->setParameter("minutesInTransaction", DateTimeHelper::$minutesInTransaction)
+                ->orderBy('a.time');
 
         return $query->getQuery()->getResult();
     }

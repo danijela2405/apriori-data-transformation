@@ -41,9 +41,9 @@ class Alarm
     protected $presetName;
 
     /**
-     * @var int
+     * @var array
      */
-    protected $transactionId;
+    protected $transactions;
 
     /**
      * @return int
@@ -124,19 +124,28 @@ class Alarm
     }
 
     /**
-     * @param $transactionId
+     * @param $transactions
      */
-    public function setTransactionId($transactionId)
+    public function setTransactions($transactions)
     {
-        $this->logicCameraId = $transactionId;
+        $this->transactions = $transactions;
     }
 
     /**
-     * @return int
+     * @param $transactionId
      */
-    public function getTransactionId()
+    public function addTransaction($transactionId)
     {
-        return $this->transactionId;
+        $this->transactions[] = $transactionId;
+        $this->transactions = array_unique($this->transactions);
+    }
+
+    /**
+     * @return array
+     */
+    public function getTransactions()
+    {
+        return $this->transactions;
     }
 
     /**
@@ -144,7 +153,7 @@ class Alarm
      */
     public function setLogicCameraId($logicCameraId)
     {
-        $this->transactionId = $logicCameraId;
+        $this->transactions = $logicCameraId;
     }
 
     /**

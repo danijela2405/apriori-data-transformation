@@ -10,7 +10,7 @@ use DateTime;
  */
 class DateTimeHelper
 {
-    public static $minutesInTransaction = 3;
+    public static $minutesInTransaction = 2;
 
     /**
      * @param int $y
@@ -40,6 +40,4 @@ class DateTimeHelper
         $dateTime->setTimestamp($timestamp);
         return $dateTime;
     }
-
-
 }

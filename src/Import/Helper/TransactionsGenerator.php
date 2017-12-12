@@ -11,14 +11,11 @@ use Repository\AlarmRepository;
 class TransactionsGenerator
 {
     /**
-     * @var DateTimeHelper
-     */
-    private $dateTimeHelper;
-
-    /**
      * @var AlarmRepository
      */
     private $alarmRepository;
+
+    private $transactionId = 1;
 
     /**
      * TransactionsGenerator constructor.
@@ -27,7 +24,6 @@ class TransactionsGenerator
      */
     public function __construct(AlarmRepository $alarmRepository)
     {
-        $this->dateTimeHelper = new DateTimeHelper();
         $this->alarmRepository = $alarmRepository;
     }
 
@@ -37,26 +33,52 @@ class TransactionsGenerator
     public function generateTransactions()
     {
         $dates = $this->alarmRepository->findTimePeriods();
-        $transactionId = 1;
 
-        foreach ($dates as $date) {
+        $dateCount = count($dates);
 
-            $dayAlarms = $this->alarmRepository->findTransactionByDate($date['day']);
+        $totalCount = 10;
+        for ($count = 0; $count < $totalCount; $count++) {
+            $this->iterateDays($dates, $dateCount, ($count / $totalCount), (($count + 1) / $totalCount));
+            $this->alarmRepository->flush();
+        }
+    }
+
+    private function iterateDays($dates, $dateCount, $countStart, $countEnd)
+    {
+        for ($count = intval($dateCount * $countStart); $count < intval($dateCount * $countEnd); $count++) {
+
+            $dayAlarms = $this->alarmRepository->findTransactionByDate($dates[$count]['day']);
+            $dayAlarmsIds = [];
 
             foreach ($dayAlarms as $dailyAlarm) {
-                $alarms = $this->alarmRepository->findTransactionByDateAndInterval($dailyAlarm);
-
-                foreach ($alarms as $alarm) {
-                    $alarm->setTransactionId($transactionId);
-                    $this->alarmRepository->persistAlarm($alarm);
-                }
-
-                $this->alarmRepository->flush();
-                echo "transaction no. ".$transactionId.":  ".count($alarms), " alarms\n";
-
-                $transactionId++;
+                $dayAlarmsIds[] = $dailyAlarm->getId();
             }
-        }
 
+            $this->iterateDayAlarms($dayAlarms, $dayAlarmsIds);
+
+        }
+    }
+
+    private function iterateDayAlarms($dayAlarms, $dayAlarmsIds)
+    {
+        foreach ($dayAlarms as $dailyAlarm) {
+
+            $alarms = $this->alarmRepository->findTransactionByDateAndInterval($dailyAlarm, $dayAlarmsIds);
+
+            foreach ($alarms as $key => $alarm) {
+                $this->persistAlarm($alarm);
+            }
+
+            echo "transaction no. ".$this->transactionId.":  ".count($alarms), " alarms\n";
+            $this->transactionId++;
+
+            unset($alarms);
+        }
+    }
+
+    private function persistAlarm($alarm)
+    {
+        $alarm->addTransaction($this->transactionId);
+        $this->alarmRepository->persistAlarm($alarm);
     }
 }

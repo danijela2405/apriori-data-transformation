@@ -2,6 +2,7 @@
 
 namespace Import\Helper;
 
+use Alarm;
 use Repository\AlarmRepository;
 
 /**
@@ -36,10 +37,21 @@ class TransactionsGenerator
 
         $dateCount = count($dates);
 
-        $totalCount = 10;
+        $totalCount = 100;
+
+        $lastTime = $lastTransactions = 0;
         for ($count = 0; $count < $totalCount; $count++) {
+            $time1 = microtime(true);
+
             $this->iterateDays($dates, $dateCount, ($count / $totalCount), (($count + 1) / $totalCount));
             $this->alarmRepository->flush();
+
+            $time = microtime(true) - $time1;
+            echo "time: ".round($time,2).", ".$this->transactionId." transactions\n";
+            echo "time diff from last: ".round(($time-$lastTime),2).", ".($this->transactionId -$lastTransactions)." diff transactions\n ";
+            echo "time per transaction: ".round(($time/($this->transactionId -$lastTransactions)),5)."\n\n ";
+            $lastTime = $time;
+            $lastTransactions = $this->transactionId;
         }
     }
 
@@ -69,14 +81,13 @@ class TransactionsGenerator
                 $this->persistAlarm($alarm);
             }
 
-            echo "transaction no. ".$this->transactionId.":  ".count($alarms), " alarms\n";
             $this->transactionId++;
 
             unset($alarms);
         }
     }
 
-    private function persistAlarm($alarm)
+    private function persistAlarm(Alarm $alarm)
     {
         $alarm->addTransaction($this->transactionId);
         $this->alarmRepository->persistAlarm($alarm);

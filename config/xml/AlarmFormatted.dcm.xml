@@ -1,0 +1,16 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                    http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+
+    <entity name="AlarmFormatted" table="alarm_formatted" repository-class="Repository/AlarmFormattedRepository">
+        <id name="id" type="integer"/>
+        <field name="time" type="time"/>
+        <field name="date" type="date"/>
+        <field name="cameraId" column="camera_id" type="integer"/>
+        <field name="cameraPosition" column="camera_position" type="string"/>
+        <field name="logicCameraId" column="logic_camera_id" type="integer"/>
+        <field name="presetName" column="preset_name" type="string"/>
+        <field name="transactionId" column="transaction_id" type="integer"/>
+    </entity>
+</doctrine-mapping>

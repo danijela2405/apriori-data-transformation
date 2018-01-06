@@ -46,10 +46,12 @@ class TransactionsGenerator
             $this->iterateDays($dates, $dateCount, ($count / $totalCount), (($count + 1) / $totalCount));
             $this->alarmRepository->flush();
 
+            gc_collect_cycles();
             $time = microtime(true) - $time1;
             echo "time: ".round($time,2).", ".$this->transactionId." transactions\n";
-            echo "time diff from last: ".round(($time-$lastTime),2).", ".($this->transactionId -$lastTransactions)." diff transactions\n ";
-            echo "time per transaction: ".round(($time/($this->transactionId -$lastTransactions)),5)."\n\n ";
+            echo "time diff from last: ".round(($time-$lastTime),2).", ".($this->transactionId -$lastTransactions)." diff transactions\n";
+            echo "time per transaction: ".round(($time/($this->transactionId -$lastTransactions)),5)."\n";
+            echo "memory peak: ".round(((memory_get_peak_usage()/1024)/1024),2)." mb \n\n";
             $lastTime = $time;
             $lastTransactions = $this->transactionId;
         }

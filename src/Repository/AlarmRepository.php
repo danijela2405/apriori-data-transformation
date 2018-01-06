@@ -15,11 +15,13 @@ class AlarmRepository extends EntityRepository
     public function persistAlarm($alarm)
     {
         $this->_em->persist($alarm);
+        $this->_em->detach($alarm);
     }
 
     public function flush()
     {
         $this->_em->flush();
+        $this->_em->clear();
     }
 
     /**

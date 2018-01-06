@@ -1,13 +1,13 @@
 <?php
 
-namespace Import\Helper;
+namespace Helper;
 
 use Alarm;
 use Repository\AlarmRepository;
 
 /**
  * Class TransactionsGenerator
- * @package Import\Helper
+ * @package Helper
  */
 class TransactionsGenerator
 {

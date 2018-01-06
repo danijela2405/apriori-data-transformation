@@ -21,4 +21,4 @@ To import data from csv into database, go to localhost/import.php and follow ins
 
 To generate transactions, run the following command from web folder (or visit localhost/generateTransactions.php)
      
-        *   php generateTransations.php  
+        *   php -dzend.enable_gc=1 -dmemory_limit=-1 generateTransactions.php  

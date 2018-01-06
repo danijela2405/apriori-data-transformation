@@ -82,7 +82,7 @@ class AlarmRepository extends EntityRepository
                 ->setParameter('dailyAlarms', $dailyAlarms)
                 ->setParameter("hours", $time->format('H'))
                 ->setParameter("minutes", $time->format('i'))
-                ->setParameter("minutesInTransaction", DateTimeHelper::$minutesInTransaction)
+                ->setParameter("minutesInTransaction", 2)
                 ->orderBy('a.time');
 
         return $query->getQuery()->getResult();

@@ -4,7 +4,9 @@
                     http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
 
     <entity name="AlarmFormatted" table="alarm_formatted" repository-class="Repository/AlarmFormattedRepository">
-        <id name="id" type="integer"/>
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
         <field name="time" type="time"/>
         <field name="date" type="date"/>
         <field name="cameraId" column="camera_id" type="integer"/>

@@ -141,7 +141,7 @@ class AlarmFormatted
      */
     public function setLogicCameraId($logicCameraId)
     {
-        $this->transactions = $logicCameraId;
+        $this->logicCameraId = $logicCameraId;
     }
 
     /**

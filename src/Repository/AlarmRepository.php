@@ -23,6 +23,20 @@ class AlarmRepository extends EntityRepository
         $this->_em->clear();
     }
 
+
+    public function findChunkByIds($startId, $endId)
+    {
+        $qb = $this->createQueryBuilder('a');
+        $query = $qb
+            ->select("a")
+            ->where('a.id > :startId')
+            ->andWhere('a.id <= :endId')
+            ->setParameter('startId',$startId)
+            ->setParameter('endId',$endId);
+
+        return $query->getQuery()->getResult();
+    }
+
     /**
      * @param string $file
      * @param array $parameters

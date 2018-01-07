@@ -9,21 +9,8 @@ use Doctrine\ORM\EntityRepository;
  * Class AlarmRepository
  * @package Repository
  */
-class AlarmRepository extends EntityRepository
+class AlarmRepository extends BaseRepository
 {
-    public function persistAlarm($alarm)
-    {
-        $this->_em->persist($alarm);
-        $this->_em->detach($alarm);
-    }
-
-    public function flush()
-    {
-        $this->_em->flush();
-        $this->_em->clear();
-    }
-
-
     public function findChunkByIds($startId, $endId)
     {
         $qb = $this->createQueryBuilder('a');
@@ -31,8 +18,8 @@ class AlarmRepository extends EntityRepository
             ->select("a")
             ->where('a.id > :startId')
             ->andWhere('a.id <= :endId')
-            ->setParameter('startId',$startId)
-            ->setParameter('endId',$endId);
+            ->setParameter('startId', $startId)
+            ->setParameter('endId', $endId);
 
         return $query->getQuery()->getResult();
     }
@@ -99,30 +86,5 @@ class AlarmRepository extends EntityRepository
                 ->orderBy('a.time');
 
         return $query->getQuery()->getResult();
-    }
-
-    /**
-     * @param array $parameters
-     * @return \PDO
-     */
-    private
-    function buildPDOConnection(
-        array $parameters
-    ) {
-        $pdoConn = new \PDO(
-            'mysql:host='.$parameters['host'].';dbname='.$parameters['dbname'],
-            $parameters['user'],
-            $parameters['password'],
-            array(
-                \PDO::MYSQL_ATTR_LOCAL_INFILE => true,
-            )
-        );
-
-        $sql = "SET FOREIGN_KEY_CHECKS=0";
-        $stmt = $pdoConn->prepare($sql);
-        $stmt->execute();
-
-        return $pdoConn;
-
     }
 }

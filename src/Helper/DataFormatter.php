@@ -31,17 +31,22 @@ class DataFormatter
     /**
      * @var int
      */
-    private static $iteration = 1000;
+    private static $iteration = 100;
 
     /**
      * @var int
      */
-    private $endId = 1000;
+    private $endId = 100;
 
     /**
      * @var int
      */
     private $startId = 1;
+
+    /**
+     * @var int
+     */
+    private $persisted = 0;
 
     /**
      * DataFormatter constructor.
@@ -70,7 +75,8 @@ class DataFormatter
 
             /*** - print - ***/
             $time = microtime(true) - $time1;
-            echo "time: ".round($time, 2).", ".$this->endId." alarms formatted\n";
+            echo $this->endId." alarms checked\n";
+            echo "time: ".round($time, 2).", ".$this->persisted." formatted alarms persisted\n";
             echo "time diff from last: ".round(($time - $lastTime), 2)."\n";
             echo "time per persist: ".round(($time / $this->endId), 5)."\n";
             echo "memory peak: ".round(((memory_get_peak_usage() / 1024) / 1024), 2)." mb \n\n";
@@ -78,13 +84,17 @@ class DataFormatter
 
             $this->startId = $this->startId + self::$iteration;
             $this->endId = $this->endId + self::$iteration;
-
+            $this->persisted = 0;
         }
     }
 
     private function iterateAlarms($startCount, $endCount)
     {
         for ($count = 0; $count < self::$iteration; $count++) {
+
+            if (!isset($this->alarmChunks[$count])) {
+                break;
+            }
             /**
              * @var Alarm $alarm
              */
@@ -101,7 +111,8 @@ class DataFormatter
                     $formattedAlarm->setCameraPosition($alarm->getCameraPosition());
                     $formattedAlarm->setTransactionId($transactionId);
 
-                    $this->alarmFormattedRepository->persistFormattedAlarm($formattedAlarm);
+                    $this->alarmFormattedRepository->persistEntity($formattedAlarm);
+                    $this->persisted++;
                 }
             }
             $this->alarmChunks = $this->alarmRepository->findChunkByIds($startCount - 1, $endCount);

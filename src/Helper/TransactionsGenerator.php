@@ -62,6 +62,7 @@ class TransactionsGenerator
         for ($count = intval($dateCount * $countStart); $count < intval($dateCount * $countEnd); $count++) {
 
             $dayAlarms = $this->alarmRepository->findTransactionByDate($dates[$count]['day']);
+
             $dayAlarmsIds = [];
 
             foreach ($dayAlarms as $dailyAlarm) {
@@ -92,6 +93,6 @@ class TransactionsGenerator
     private function persistAlarm(Alarm $alarm)
     {
         $alarm->addTransaction($this->transactionId);
-        $this->alarmRepository->persistAlarm($alarm);
+        $this->alarmRepository->persistEntity($alarm);
     }
 }

@@ -3,15 +3,15 @@
 namespace Helper;
 
 use Alarm;
-use AlarmFormatted;
 use Repository\AlarmRepository;
-use Repository\AlarmFormattedRepository;
+use Repository\TransactionsFormattedRepository;
+use TransactionsFormatted;
 
 /**
- * Class DataFormatter
+ * Class TransactionsFormatter
  * @package Helper
  */
-class DataFormatter
+class TransactionsFormatter
 {
     /**
      * @var AlarmRepository
@@ -19,9 +19,9 @@ class DataFormatter
     private $alarmRepository;
 
     /**
-     * @var AlarmFormattedRepository
+     * @var TransactionsFormattedRepository
      */
-    private $alarmFormattedRepository;
+    private $transactionsFormattedRepository;
 
     /**
      * @var array
@@ -49,17 +49,20 @@ class DataFormatter
     private $persisted = 0;
 
     /**
-     * DataFormatter constructor.
+     * TransactionsFormatter constructor.
      * @param AlarmRepository $alarmRepository
-     * @param AlarmFormattedRepository $alarmFormattedRepository
+     * @param TransactionsFormattedRepository $transactionsFormattedRepository
      */
-    public function __construct(AlarmRepository $alarmRepository, AlarmFormattedRepository $alarmFormattedRepository)
-    {
+    public function __construct(
+        AlarmRepository $alarmRepository,
+        TransactionsFormattedRepository $transactionsFormattedRepository
+    ) {
         $this->alarmRepository = $alarmRepository;
-        $this->alarmFormattedRepository = $alarmFormattedRepository;
+        $this->transactionsFormattedRepository = $transactionsFormattedRepository;
     }
 
-    public function formatData()
+
+    public function formatTransactions()
     {
         $this->alarmChunks = $this->alarmRepository->findChunkByIds($this->startId, $this->endId);
 
@@ -69,7 +72,7 @@ class DataFormatter
             $time1 = microtime(true);
 
             $this->iterateAlarms($this->startId, $this->endId);
-            $this->alarmFormattedRepository->flush();
+            $this->transactionsFormattedRepository->flush();
 
             gc_collect_cycles();
 
@@ -102,21 +105,27 @@ class DataFormatter
             $transactions = $alarm->getTransactions();
             if (!empty($transactions)) {
                 foreach ($transactions as $transactionId) {
-                    $formattedAlarm = new AlarmFormatted();
-                    $formattedAlarm->setTime($alarm->getTime());
-                    $formattedAlarm->setDate($alarm->getDate());
-                    $formattedAlarm->setPresetName($alarm->getPresetName());
-                    $formattedAlarm->setLogicCameraId($alarm->getLogicCameraId());
-                    $formattedAlarm->setCameraId($alarm->getCameraId());
-                    $formattedAlarm->setCameraPosition($alarm->getCameraPosition());
-                    $formattedAlarm->setTransactionId($transactionId);
+                    $transactionsFormatted = $this->transactionsFormattedRepository->findOneById($transactionId);
 
-                    $this->alarmFormattedRepository->persistEntity($formattedAlarm);
+                    if (is_null($transactionsFormatted)) {
+                        $transactionsFormatted = new TransactionsFormatted();
+                        $transactionsFormatted->setTransactionId($transactionId);
+                    }
+
+                    $transactionsFormatted->addAlarm(
+                        "K".$alarm->getCameraId().$alarm->getPresetName()
+                    );
+
+                    $currentAlarmCount = $transactionsFormatted->getAlarmCount();
+                    $currentAlarmCount++;
+                    $transactionsFormatted->setAlarmCount($currentAlarmCount);
+
+
+                    $this->transactionsFormattedRepository->persistEntity($transactionsFormatted);
                     $this->persisted++;
                 }
             }
             $this->alarmChunks = $this->alarmRepository->findChunkByIds($startCount - 1, $endCount);
-
         }
     }
 }

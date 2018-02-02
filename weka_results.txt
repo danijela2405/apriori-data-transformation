@@ -1,0 +1,3595 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.01 -S -1.0 -A -V -Z -c -1
+Relation:     transactions_formatted-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    300172
+Attributes:   48
+              K1preset1
+              K1preset2
+              K1preset3
+              K1preset4
+              K1preset5
+              K1preset6
+              K1preset7
+              K1preset8
+              K2preset1
+              K2preset2
+              K2preset3
+              K2preset4
+              K2preset5
+              K2preset6
+              K2preset7
+              K2preset8
+              K3preset1
+              K3preset2
+              K3preset3
+              K3preset4
+              K3preset5
+              K3preset6
+              K3preset7
+              K3preset8
+              K4preset1
+              K4preset2
+              K4preset3
+              K4preset4
+              K4preset5
+              K4preset6
+              K4preset7
+              K4preset8
+              K5preset1
+              K5preset2
+              K5preset3
+              K5preset4
+              K5preset5
+              K5preset6
+              K5preset7
+              K5preset8
+              K6preset1
+              K6preset2
+              K6preset3
+              K6preset4
+              K6preset5
+              K6preset6
+              K6preset7
+              K6preset8
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.01 (3002 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 20
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 47
+
+Large Itemsets L(1):
+K1preset1=1 53722
+0  16342
+K1preset2=1 36600
+0  8791
+K1preset3=1 51655
+0  10222
+K1preset4=1 72899
+0  17151
+K1preset5=1 55412
+0  11905
+K1preset6=1 62487
+0  12132
+K1preset7=1 46280
+0  7550
+K1preset8=1 44886
+0  9394
+K2preset1=1 71301
+0  15142
+K2preset2=1 70882
+0  17386
+K2preset3=1 68495
+0  13551
+K2preset4=1 64775
+0  14290
+K2preset5=1 78259
+0  18129
+K2preset6=1 71164
+0  17116
+K2preset7=1 75504
+0  17118
+K2preset8=1 67477
+0  14942
+K3preset1=1 59340
+0  14182
+K3preset2=1 42277
+0  7204
+K3preset3=1 50691
+0  10284
+K3preset4=1 49466
+0  10894
+K3preset5=1 71975
+0  18515
+K3preset6=1 63276
+0  14903
+K3preset7=1 56117
+0  12277
+K3preset8=1 56957
+0  12465
+K4preset1=1 69496
+0  15510
+K4preset2=1 72811
+0  16565
+K4preset3=1 76232
+0  18929
+K4preset4=1 70395
+0  16036
+K4preset5=1 53945
+0  12616
+K4preset6=1 71187
+0  16187
+K4preset7=1 66182
+0  14980
+K4preset8=1 41736
+0  5533
+K5preset1=1 57612
+0  13305
+K5preset2=1 60772
+0  13840
+K5preset3=1 62614
+0  17491
+K5preset4=1 43075
+0  12673
+K5preset5=1 69878
+0  19247
+K5preset6=1 65421
+0  14585
+K5preset7=1 62056
+0  14747
+K5preset8=1 62935
+0  13856
+K6preset1=1 56701
+0  14335
+K6preset2=1 59886
+0  14926
+K6preset3=1 65125
+0  16585
+K6preset4=1 59304
+0  14523
+K6preset5=1 51161
+0  14202
+K6preset6=1 47407
+0  11591
+K6preset7=1 65842
+0  21052
+
+Size of set of large itemsets L(2): 815
+
+Large Itemsets L(2):
+K1preset1=1 K1preset2=1 9208
+0  3260
+K1preset1=1 K1preset3=1 9269
+0  3361
+K1preset1=1 K1preset4=1 14037
+0  5421
+K1preset1=1 K1preset5=1 10289
+0  3824
+K1preset1=1 K1preset6=1 10241
+0  3381
+K1preset1=1 K2preset1=1 12642
+0  4210
+K1preset1=1 K2preset2=1 13072
+0  4684
+K1preset1=1 K2preset3=1 11963
+0  4212
+K1preset1=1 K2preset4=1 14946
+0  4133
+K1preset1=1 K2preset5=1 15048
+0  4985
+K1preset1=1 K2preset6=1 17511
+0  5693
+K1preset1=1 K2preset7=1 15476
+0  5575
+K1preset1=1 K2preset8=1 13365
+0  4470
+K1preset1=1 K3preset1=1 10845
+0  4365
+K1preset1=1 K3preset4=1 7931
+0  3371
+K1preset1=1 K3preset5=1 13478
+0  5342
+K1preset1=1 K3preset6=1 11719
+0  4728
+K1preset1=1 K3preset7=1 8688
+0  3185
+K1preset1=1 K3preset8=1 10242
+0  3723
+K1preset1=1 K4preset1=1 12416
+0  4506
+K1preset1=1 K4preset2=1 13211
+0  4559
+K1preset1=1 K4preset3=1 13570
+0  4988
+K1preset1=1 K4preset4=1 11719
+0  4021
+K1preset1=1 K4preset5=1 8733
+0  3440
+K1preset1=1 K4preset6=1 12595
+0  4184
+K1preset1=1 K4preset7=1 11570
+0  4521
+K1preset1=1 K5preset1=1 10608
+0  4013
+K1preset1=1 K5preset2=1 10967
+0  3818
+K1preset1=1 K5preset3=1 15813
+0  5540
+K1preset1=1 K5preset4=1 10799
+0  3634
+K1preset1=1 K5preset5=1 14755
+0  5931
+K1preset1=1 K5preset6=1 12668
+0  4360
+K1preset1=1 K5preset7=1 13621
+0  5026
+K1preset1=1 K5preset8=1 10961
+0  4286
+K1preset1=1 K6preset1=1 10859
+0  4204
+K1preset1=1 K6preset2=1 12444
+0  4781
+K1preset1=1 K6preset3=1 12459
+0  4986
+K1preset1=1 K6preset4=1 12585
+0  4469
+K1preset1=1 K6preset5=1 10612
+0  4036
+K1preset1=1 K6preset6=1 10518
+0  3851
+K1preset1=1 K6preset7=1 16794
+0  7130
+K1preset2=1 K2preset5=1 10360
+0  3624
+K1preset2=1 K3preset5=1 8888
+0  3049
+K1preset2=1 K5preset4=1 7996
+0  3067
+K1preset2=1 K6preset7=1 8737
+0  3805
+K1preset3=1 K1preset4=1 15739
+0  3460
+K1preset3=1 K2preset1=1 14602
+0  3053
+K1preset3=1 K2preset2=1 14026
+0  3420
+K1preset3=1 K2preset5=1 13716
+0  3303
+K1preset3=1 K2preset7=1 13369
+0  3422
+K1preset3=1 K2preset8=1 14034
+0  3474
+K1preset3=1 K3preset5=1 13807
+0  3888
+K1preset3=1 K4preset2=1 12825
+0  3710
+K1preset3=1 K4preset3=1 13854
+0  3398
+K1preset3=1 K4preset4=1 13023
+0  3126
+K1preset3=1 K4preset5=1 9921
+0  3034
+K1preset3=1 K4preset6=1 12972
+0  3481
+K1preset3=1 K4preset7=1 12095
+0  3035
+K1preset3=1 K5preset5=1 12985
+0  4071
+K1preset3=1 K6preset1=1 10585
+0  3210
+K1preset3=1 K6preset3=1 11231
+0  3023
+K1preset3=1 K6preset7=1 12221
+0  4426
+K1preset4=1 K1preset5=1 20670
+0  5239
+K1preset4=1 K1preset6=1 21453
+0  4640
+K1preset4=1 K1preset8=1 12235
+0  3424
+K1preset4=1 K2preset1=1 28132
+0  5952
+K1preset4=1 K2preset2=1 27516
+0  7109
+K1preset4=1 K2preset3=1 22686
+0  5131
+K1preset4=1 K2preset4=1 19130
+0  4762
+K1preset4=1 K2preset5=1 28272
+0  6908
+K1preset4=1 K2preset6=1 24989
+0  6452
+K1preset4=1 K2preset7=1 27249
+0  6544
+K1preset4=1 K2preset8=1 21473
+0  5563
+K1preset4=1 K3preset1=1 21649
+0  6082
+K1preset4=1 K3preset2=1 14320
+0  3148
+K1preset4=1 K3preset3=1 16946
+0  4142
+K1preset4=1 K3preset4=1 18618
+0  4989
+K1preset4=1 K3preset5=1 27304
+0  7892
+K1preset4=1 K3preset6=1 22832
+0  5967
+K1preset4=1 K3preset7=1 21566
+0  5235
+K1preset4=1 K3preset8=1 22117
+0  5381
+K1preset4=1 K4preset1=1 24882
+0  6447
+K1preset4=1 K4preset2=1 25578
+0  6718
+K1preset4=1 K4preset3=1 28280
+0  7785
+K1preset4=1 K4preset4=1 26067
+0  6418
+K1preset4=1 K4preset5=1 20168
+0  5937
+K1preset4=1 K4preset6=1 26796
+0  6398
+K1preset4=1 K4preset7=1 24205
+0  6447
+K1preset4=1 K5preset1=1 18873
+0  5309
+K1preset4=1 K5preset2=1 19214
+0  5843
+K1preset4=1 K5preset3=1 16358
+0  5350
+K1preset4=1 K5preset5=1 21136
+0  6718
+K1preset4=1 K5preset6=1 18423
+0  4938
+K1preset4=1 K5preset7=1 17336
+0  4774
+K1preset4=1 K5preset8=1 19194
+0  5180
+K1preset4=1 K6preset1=1 14160
+0  4909
+K1preset4=1 K6preset2=1 16387
+0  4876
+K1preset4=1 K6preset3=1 21201
+0  6257
+K1preset4=1 K6preset4=1 15875
+0  4635
+K1preset4=1 K6preset5=1 13663
+0  4745
+K1preset4=1 K6preset6=1 10716
+0  3499
+K1preset4=1 K6preset7=1 22077
+0  7715
+K1preset5=1 K1preset6=1 15283
+0  3065
+K1preset5=1 K2preset1=1 20220
+0  4946
+K1preset5=1 K2preset2=1 18003
+0  4691
+K1preset5=1 K2preset3=1 15601
+0  3455
+K1preset5=1 K2preset4=1 13480
+0  3456
+K1preset5=1 K2preset5=1 17854
+0  4596
+K1preset5=1 K2preset6=1 16315
+0  4364
+K1preset5=1 K2preset7=1 18636
+0  4834
+K1preset5=1 K2preset8=1 14977
+0  3596
+K1preset5=1 K3preset1=1 15292
+0  4415
+K1preset5=1 K3preset3=1 11792
+0  3011
+K1preset5=1 K3preset4=1 12880
+0  3374
+K1preset5=1 K3preset5=1 18586
+0  5792
+K1preset5=1 K3preset6=1 16090
+0  4455
+K1preset5=1 K3preset7=1 14523
+0  3610
+K1preset5=1 K3preset8=1 14685
+0  3874
+K1preset5=1 K4preset1=1 17371
+0  4981
+K1preset5=1 K4preset2=1 19386
+0  5013
+K1preset5=1 K4preset3=1 20434
+0  6072
+K1preset5=1 K4preset4=1 19080
+0  5141
+K1preset5=1 K4preset5=1 15284
+0  4563
+K1preset5=1 K4preset6=1 18871
+0  4449
+K1preset5=1 K4preset7=1 17116
+0  4554
+K1preset5=1 K5preset1=1 14268
+0  3988
+K1preset5=1 K5preset2=1 14149
+0  3782
+K1preset5=1 K5preset3=1 13193
+0  3963
+K1preset5=1 K5preset5=1 15595
+0  4877
+K1preset5=1 K5preset6=1 13311
+0  3555
+K1preset5=1 K5preset7=1 12378
+0  3556
+K1preset5=1 K5preset8=1 13533
+0  3198
+K1preset5=1 K6preset1=1 9730
+0  3159
+K1preset5=1 K6preset2=1 11683
+0  3805
+K1preset5=1 K6preset3=1 14998
+0  3963
+K1preset5=1 K6preset4=1 11493
+0  3637
+K1preset5=1 K6preset5=1 8946
+0  3272
+K1preset5=1 K6preset7=1 15463
+0  5269
+K1preset6=1 K2preset1=1 20257
+0  3660
+K1preset6=1 K2preset2=1 16854
+0  3781
+K1preset6=1 K2preset3=1 17933
+0  3106
+K1preset6=1 K2preset4=1 14024
+0  3169
+K1preset6=1 K2preset5=1 18335
+0  4249
+K1preset6=1 K2preset6=1 17657
+0  3744
+K1preset6=1 K2preset7=1 18545
+0  4004
+K1preset6=1 K2preset8=1 16370
+0  3570
+K1preset6=1 K3preset5=1 17083
+0  4413
+K1preset6=1 K3preset6=1 12992
+0  3074
+K1preset6=1 K4preset1=1 16912
+0  3651
+K1preset6=1 K4preset2=1 17568
+0  3803
+K1preset6=1 K4preset3=1 19263
+0  4443
+K1preset6=1 K4preset4=1 17713
+0  3937
+K1preset6=1 K4preset6=1 18431
+0  4557
+K1preset6=1 K4preset7=1 15511
+0  3233
+K1preset6=1 K5preset1=1 14789
+0  3436
+K1preset6=1 K5preset2=1 15277
+0  3838
+K1preset6=1 K5preset3=1 14038
+0  4172
+K1preset6=1 K5preset5=1 16806
+0  5015
+K1preset6=1 K5preset6=1 15220
+0  3683
+K1preset6=1 K5preset7=1 13748
+0  3510
+K1preset6=1 K5preset8=1 15357
+0  3309
+K1preset6=1 K6preset1=1 10926
+0  3155
+K1preset6=1 K6preset2=1 12820
+0  3685
+K1preset6=1 K6preset3=1 15496
+0  4320
+K1preset6=1 K6preset4=1 12900
+0  3566
+K1preset6=1 K6preset5=1 9891
+0  3067
+K1preset6=1 K6preset7=1 16756
+0  5572
+K1preset7=1 K6preset7=1 10548
+0  3008
+K1preset8=1 K2preset2=1 12252
+0  3365
+K1preset8=1 K2preset7=1 11731
+0  3064
+K1preset8=1 K3preset5=1 11723
+0  3358
+K1preset8=1 K4preset2=1 11488
+0  3024
+K1preset8=1 K4preset3=1 12774
+0  3598
+K1preset8=1 K4preset4=1 11148
+0  3076
+K1preset8=1 K5preset3=1 10689
+0  3305
+K1preset8=1 K5preset5=1 11153
+0  3323
+K1preset8=1 K6preset7=1 10816
+0  3473
+K2preset1=1 K2preset2=1 29200
+0  6825
+K2preset1=1 K2preset3=1 23632
+0  4441
+K2preset1=1 K2preset4=1 19288
+0  4611
+K2preset1=1 K2preset5=1 27857
+0  6028
+K2preset1=1 K2preset6=1 24262
+0  5521
+K2preset1=1 K2preset7=1 29183
+0  6886
+K2preset1=1 K2preset8=1 20981
+0  4979
+K2preset1=1 K3preset1=1 22109
+0  5515
+K2preset1=1 K3preset3=1 17720
+0  3539
+K2preset1=1 K3preset4=1 19802
+0  4335
+K2preset1=1 K3preset5=1 27969
+0  7271
+K2preset1=1 K3preset6=1 23469
+0  5702
+K2preset1=1 K3preset7=1 22197
+0  4785
+K2preset1=1 K3preset8=1 22197
+0  4707
+K2preset1=1 K4preset1=1 26810
+0  5829
+K2preset1=1 K4preset2=1 27614
+0  6376
+K2preset1=1 K4preset3=1 30279
+0  7436
+K2preset1=1 K4preset4=1 27734
+0  6207
+K2preset1=1 K4preset5=1 20249
+0  5007
+K2preset1=1 K4preset6=1 26458
+0  5888
+K2preset1=1 K4preset7=1 24609
+0  5706
+K2preset1=1 K5preset1=1 18718
+0  4656
+K2preset1=1 K5preset2=1 18368
+0  4266
+K2preset1=1 K5preset3=1 16235
+0  4676
+K2preset1=1 K5preset5=1 21297
+0  5868
+K2preset1=1 K5preset6=1 19285
+0  4430
+K2preset1=1 K5preset7=1 16339
+0  4092
+K2preset1=1 K5preset8=1 20405
+0  4635
+K2preset1=1 K6preset1=1 12712
+0  4221
+K2preset1=1 K6preset2=1 16751
+0  4341
+K2preset1=1 K6preset3=1 20697
+0  5474
+K2preset1=1 K6preset4=1 16781
+0  4410
+K2preset1=1 K6preset5=1 13357
+0  3923
+K2preset1=1 K6preset7=1 19670
+0  6195
+K2preset2=1 K2preset3=1 22592
+0  5685
+K2preset2=1 K2preset4=1 20491
+0  5386
+K2preset2=1 K2preset5=1 28435
+0  7222
+K2preset2=1 K2preset6=1 23707
+0  6560
+K2preset2=1 K2preset7=1 27142
+0  7269
+K2preset2=1 K2preset8=1 22451
+0  6009
+K2preset2=1 K3preset1=1 20197
+0  5799
+K2preset2=1 K3preset2=1 13277
+0  3021
+K2preset2=1 K3preset3=1 17294
+0  4819
+K2preset2=1 K3preset4=1 18594
+0  4994
+K2preset2=1 K3preset5=1 26713
+0  7799
+K2preset2=1 K3preset6=1 22633
+0  5931
+K2preset2=1 K3preset7=1 20755
+0  5138
+K2preset2=1 K3preset8=1 20682
+0  5015
+K2preset2=1 K4preset1=1 24498
+0  6291
+K2preset2=1 K4preset2=1 26096
+0  6697
+K2preset2=1 K4preset3=1 27951
+0  7613
+K2preset2=1 K4preset4=1 26034
+0  6463
+K2preset2=1 K4preset5=1 19342
+0  5390
+K2preset2=1 K4preset6=1 25677
+0  6707
+K2preset2=1 K4preset7=1 23324
+0  6159
+K2preset2=1 K5preset1=1 18104
+0  5629
+K2preset2=1 K5preset2=1 18530
+0  4944
+K2preset2=1 K5preset3=1 16898
+0  5657
+K2preset2=1 K5preset4=1 10772
+0  3678
+K2preset2=1 K5preset5=1 19490
+0  5805
+K2preset2=1 K5preset6=1 18523
+0  5298
+K2preset2=1 K5preset7=1 15208
+0  4303
+K2preset2=1 K5preset8=1 18452
+0  4994
+K2preset2=1 K6preset1=1 14082
+0  4665
+K2preset2=1 K6preset2=1 15411
+0  4831
+K2preset2=1 K6preset3=1 22502
+0  6910
+K2preset2=1 K6preset4=1 16861
+0  5127
+K2preset2=1 K6preset5=1 13377
+0  4718
+K2preset2=1 K6preset7=1 20279
+0  7567
+K2preset3=1 K2preset4=1 19650
+0  4503
+K2preset3=1 K2preset5=1 26615
+0  6263
+K2preset3=1 K2preset6=1 23914
+0  6024
+K2preset3=1 K2preset7=1 25359
+0  5579
+K2preset3=1 K2preset8=1 21017
+0  4869
+K2preset3=1 K3preset1=1 17263
+0  3917
+K2preset3=1 K3preset4=1 15493
+0  3197
+K2preset3=1 K3preset5=1 23292
+0  5740
+K2preset3=1 K3preset6=1 19023
+0  4563
+K2preset3=1 K3preset7=1 18604
+0  4087
+K2preset3=1 K3preset8=1 17917
+0  3716
+K2preset3=1 K4preset1=1 20850
+0  4725
+K2preset3=1 K4preset2=1 21468
+0  4863
+K2preset3=1 K4preset3=1 23823
+0  5401
+K2preset3=1 K4preset4=1 22959
+0  4554
+K2preset3=1 K4preset5=1 16275
+0  4020
+K2preset3=1 K4preset6=1 19681
+0  4249
+K2preset3=1 K4preset7=1 19373
+0  4345
+K2preset3=1 K5preset1=1 16086
+0  4616
+K2preset3=1 K5preset2=1 17067
+0  3991
+K2preset3=1 K5preset3=1 14718
+0  4936
+K2preset3=1 K5preset4=1 8298
+0  3215
+K2preset3=1 K5preset5=1 18536
+0  4597
+K2preset3=1 K5preset6=1 15860
+0  3446
+K2preset3=1 K5preset7=1 13834
+0  3444
+K2preset3=1 K5preset8=1 17990
+0  4233
+K2preset3=1 K6preset1=1 11753
+0  3290
+K2preset3=1 K6preset2=1 13169
+0  3107
+K2preset3=1 K6preset3=1 18077
+0  4633
+K2preset3=1 K6preset4=1 16345
+0  4200
+K2preset3=1 K6preset5=1 11966
+0  3579
+K2preset3=1 K6preset7=1 18295
+0  5537
+K2preset4=1 K2preset5=1 24612
+0  6124
+K2preset4=1 K2preset6=1 20929
+0  5280
+K2preset4=1 K2preset7=1 20990
+0  5323
+K2preset4=1 K2preset8=1 18045
+0  4516
+K2preset4=1 K3preset1=1 14381
+0  3730
+K2preset4=1 K3preset4=1 13217
+0  3246
+K2preset4=1 K3preset5=1 18575
+0  4621
+K2preset4=1 K3preset6=1 16031
+0  4169
+K2preset4=1 K3preset7=1 14522
+0  3556
+K2preset4=1 K4preset1=1 17528
+0  4221
+K2preset4=1 K4preset2=1 18294
+0  4478
+K2preset4=1 K4preset3=1 20416
+0  4948
+K2preset4=1 K4preset4=1 18473
+0  4245
+K2preset4=1 K4preset5=1 13052
+0  3712
+K2preset4=1 K4preset6=1 18731
+0  4509
+K2preset4=1 K4preset7=1 15773
+0  3781
+K2preset4=1 K5preset1=1 13390
+0  3538
+K2preset4=1 K5preset2=1 14208
+0  3690
+K2preset4=1 K5preset3=1 16755
+0  5500
+K2preset4=1 K5preset4=1 11181
+0  3603
+K2preset4=1 K5preset5=1 19372
+0  5373
+K2preset4=1 K5preset6=1 15689
+0  4030
+K2preset4=1 K5preset7=1 14699
+0  4026
+K2preset4=1 K5preset8=1 13743
+0  3743
+K2preset4=1 K6preset1=1 14259
+0  3988
+K2preset4=1 K6preset2=1 15413
+0  4222
+K2preset4=1 K6preset3=1 15999
+0  4216
+K2preset4=1 K6preset4=1 17027
+0  4053
+K2preset4=1 K6preset5=1 14088
+0  4211
+K2preset4=1 K6preset6=1 10642
+0  3365
+K2preset4=1 K6preset7=1 17293
+0  5060
+K2preset5=1 K2preset6=1 30150
+0  7872
+K2preset5=1 K2preset7=1 32152
+0  7726
+K2preset5=1 K2preset8=1 24212
+0  6157
+K2preset5=1 K3preset1=1 22268
+0  5674
+K2preset5=1 K3preset3=1 18218
+0  4193
+K2preset5=1 K3preset4=1 19360
+0  4649
+K2preset5=1 K3preset5=1 28596
+0  7681
+K2preset5=1 K3preset6=1 25440
+0  6289
+K2preset5=1 K3preset7=1 21542
+0  4872
+K2preset5=1 K3preset8=1 22080
+0  5064
+K2preset5=1 K4preset1=1 26445
+0  6302
+K2preset5=1 K4preset2=1 28466
+0  7030
+K2preset5=1 K4preset3=1 30072
+0  7377
+K2preset5=1 K4preset4=1 28145
+0  6362
+K2preset5=1 K4preset5=1 20362
+0  5259
+K2preset5=1 K4preset6=1 24727
+0  5584
+K2preset5=1 K4preset7=1 26198
+0  6452
+K2preset5=1 K5preset1=1 17817
+0  4965
+K2preset5=1 K5preset2=1 19385
+0  5266
+K2preset5=1 K5preset3=1 17296
+0  5473
+K2preset5=1 K5preset4=1 10998
+0  3630
+K2preset5=1 K5preset5=1 21042
+0  6208
+K2preset5=1 K5preset6=1 18958
+0  4676
+K2preset5=1 K5preset7=1 14486
+0  3761
+K2preset5=1 K5preset8=1 19449
+0  5259
+K2preset5=1 K6preset1=1 14374
+0  4435
+K2preset5=1 K6preset2=1 16011
+0  4376
+K2preset5=1 K6preset3=1 21745
+0  5972
+K2preset5=1 K6preset4=1 16510
+0  4504
+K2preset5=1 K6preset5=1 13963
+0  4112
+K2preset5=1 K6preset6=1 10405
+0  3468
+K2preset5=1 K6preset7=1 21864
+0  7827
+K2preset6=1 K2preset7=1 28768
+0  7126
+K2preset6=1 K2preset8=1 21475
+0  5867
+K2preset6=1 K3preset1=1 18758
+0  5280
+K2preset6=1 K3preset3=1 13049
+0  3294
+K2preset6=1 K3preset4=1 15396
+0  3969
+K2preset6=1 K3preset5=1 25740
+0  7338
+K2preset6=1 K3preset6=1 21627
+0  5468
+K2preset6=1 K3preset7=1 18223
+0  4474
+K2preset6=1 K3preset8=1 19547
+0  4578
+K2preset6=1 K4preset1=1 22999
+0  5565
+K2preset6=1 K4preset2=1 25367
+0  6435
+K2preset6=1 K4preset3=1 28115
+0  7611
+K2preset6=1 K4preset4=1 25078
+0  6187
+K2preset6=1 K4preset5=1 18504
+0  4860
+K2preset6=1 K4preset6=1 21239
+0  5217
+K2preset6=1 K4preset7=1 22808
+0  5964
+K2preset6=1 K5preset1=1 15782
+0  5037
+K2preset6=1 K5preset2=1 18387
+0  5337
+K2preset6=1 K5preset3=1 17594
+0  6104
+K2preset6=1 K5preset4=1 9768
+0  3245
+K2preset6=1 K5preset5=1 19271
+0  6282
+K2preset6=1 K5preset6=1 17708
+0  5370
+K2preset6=1 K5preset7=1 14089
+0  4276
+K2preset6=1 K5preset8=1 16784
+0  4874
+K2preset6=1 K6preset1=1 13427
+0  4344
+K2preset6=1 K6preset2=1 16976
+0  5202
+K2preset6=1 K6preset3=1 17582
+0  5384
+K2preset6=1 K6preset4=1 17882
+0  4825
+K2preset6=1 K6preset5=1 13140
+0  4578
+K2preset6=1 K6preset6=1 11690
+0  4275
+K2preset6=1 K6preset7=1 22060
+0  7898
+K2preset7=1 K2preset8=1 23119
+0  6262
+K2preset7=1 K3preset1=1 22932
+0  6008
+K2preset7=1 K3preset3=1 18430
+0  4065
+K2preset7=1 K3preset4=1 19483
+0  4781
+K2preset7=1 K3preset5=1 26826
+0  7272
+K2preset7=1 K3preset6=1 23325
+0  5806
+K2preset7=1 K3preset7=1 23833
+0  5222
+K2preset7=1 K3preset8=1 22571
+0  5173
+K2preset7=1 K4preset1=1 27777
+0  6536
+K2preset7=1 K4preset2=1 28844
+0  6848
+K2preset7=1 K4preset3=1 28926
+0  7881
+K2preset7=1 K4preset4=1 29423
+0  7099
+K2preset7=1 K4preset5=1 22350
+0  6077
+K2preset7=1 K4preset6=1 26542
+0  6500
+K2preset7=1 K4preset7=1 25824
+0  6428
+K2preset7=1 K5preset1=1 18840
+0  5408
+K2preset7=1 K5preset2=1 18538
+0  5776
+K2preset7=1 K5preset3=1 15443
+0  5223
+K2preset7=1 K5preset4=1 9844
+0  3259
+K2preset7=1 K5preset5=1 21194
+0  6726
+K2preset7=1 K5preset6=1 18629
+0  5045
+K2preset7=1 K5preset7=1 15821
+0  4207
+K2preset7=1 K5preset8=1 20515
+0  5592
+K2preset7=1 K6preset1=1 12699
+0  3924
+K2preset7=1 K6preset2=1 16149
+0  4701
+K2preset7=1 K6preset3=1 22058
+0  6389
+K2preset7=1 K6preset4=1 17478
+0  5085
+K2preset7=1 K6preset5=1 13518
+0  4296
+K2preset7=1 K6preset6=1 11353
+0  4075
+K2preset7=1 K6preset7=1 21647
+0  7472
+K2preset8=1 K3preset1=1 15823
+0  4115
+K2preset8=1 K3preset4=1 13245
+0  3496
+K2preset8=1 K3preset5=1 20988
+0  6047
+K2preset8=1 K3preset6=1 16738
+0  4501
+K2preset8=1 K3preset7=1 15592
+0  3537
+K2preset8=1 K3preset8=1 15629
+0  3674
+K2preset8=1 K4preset1=1 17615
+0  4431
+K2preset8=1 K4preset2=1 18336
+0  5139
+K2preset8=1 K4preset3=1 21268
+0  6380
+K2preset8=1 K4preset4=1 19700
+0  5142
+K2preset8=1 K4preset5=1 15152
+0  4238
+K2preset8=1 K4preset6=1 19571
+0  4718
+K2preset8=1 K4preset7=1 17235
+0  4654
+K2preset8=1 K5preset1=1 13940
+0  3564
+K2preset8=1 K5preset2=1 16138
+0  3984
+K2preset8=1 K5preset3=1 15339
+0  4874
+K2preset8=1 K5preset5=1 18805
+0  6214
+K2preset8=1 K5preset6=1 18294
+0  4672
+K2preset8=1 K5preset7=1 14562
+0  3796
+K2preset8=1 K5preset8=1 15427
+0  4058
+K2preset8=1 K6preset1=1 14313
+0  4147
+K2preset8=1 K6preset2=1 15355
+0  4464
+K2preset8=1 K6preset3=1 17474
+0  5272
+K2preset8=1 K6preset4=1 15785
+0  4163
+K2preset8=1 K6preset5=1 12360
+0  3368
+K2preset8=1 K6preset6=1 11080
+0  3285
+K2preset8=1 K6preset7=1 19010
+0  6193
+K3preset1=1 K3preset2=1 16801
+0  3229
+K3preset1=1 K3preset3=1 21086
+0  4702
+K3preset1=1 K3preset4=1 22646
+0  5711
+K3preset1=1 K3preset5=1 28388
+0  7985
+K3preset1=1 K3preset6=1 26890
+0  7262
+K3preset1=1 K3preset7=1 24967
+0  6109
+K3preset1=1 K3preset8=1 25346
+0  6052
+K3preset1=1 K4preset1=1 27704
+0  7407
+K3preset1=1 K4preset2=1 30218
+0  8181
+K3preset1=1 K4preset3=1 27865
+0  7613
+K3preset1=1 K4preset4=1 28348
+0  7544
+K3preset1=1 K4preset5=1 22094
+0  5786
+K3preset1=1 K4preset6=1 21536
+0  5975
+K3preset1=1 K4preset7=1 28107
+0  7285
+K3preset1=1 K5preset1=1 15828
+0  4392
+K3preset1=1 K5preset2=1 15562
+0  4206
+K3preset1=1 K5preset3=1 14400
+0  4367
+K3preset1=1 K5preset5=1 17922
+0  5891
+K3preset1=1 K5preset6=1 17487
+0  4548
+K3preset1=1 K5preset7=1 14321
+0  4108
+K3preset1=1 K5preset8=1 17259
+0  4743
+K3preset1=1 K6preset1=1 12312
+0  4328
+K3preset1=1 K6preset2=1 13378
+0  4213
+K3preset1=1 K6preset3=1 16059
+0  4724
+K3preset1=1 K6preset4=1 14093
+0  3963
+K3preset1=1 K6preset5=1 10691
+0  3973
+K3preset1=1 K6preset6=1 9541
+0  3450
+K3preset1=1 K6preset7=1 18619
+0  6358
+K3preset2=1 K3preset3=1 20766
+0  4011
+K3preset2=1 K3preset4=1 19668
+0  3700
+K3preset2=1 K3preset5=1 20110
+0  4019
+K3preset2=1 K3preset6=1 18396
+0  3988
+K3preset2=1 K3preset7=1 20844
+0  3914
+K3preset2=1 K3preset8=1 19811
+0  3982
+K3preset2=1 K4preset1=1 21017
+0  4388
+K3preset2=1 K4preset2=1 20571
+0  4037
+K3preset2=1 K4preset3=1 19518
+0  3757
+K3preset2=1 K4preset4=1 20798
+0  3939
+K3preset2=1 K4preset5=1 19926
+0  4229
+K3preset2=1 K4preset7=1 18584
+0  3835
+K3preset3=1 K3preset4=1 22708
+0  5009
+K3preset3=1 K3preset5=1 24636
+0  5979
+K3preset3=1 K3preset6=1 21359
+0  5044
+K3preset3=1 K3preset7=1 24709
+0  5409
+K3preset3=1 K3preset8=1 23684
+0  5201
+K3preset3=1 K4preset1=1 26279
+0  6079
+K3preset3=1 K4preset2=1 24434
+0  5786
+K3preset3=1 K4preset3=1 23982
+0  5151
+K3preset3=1 K4preset4=1 25528
+0  5647
+K3preset3=1 K4preset5=1 24327
+0  5933
+K3preset3=1 K4preset6=1 18224
+0  4291
+K3preset3=1 K4preset7=1 22641
+0  5174
+K3preset3=1 K5preset5=1 15020
+0  3862
+K3preset3=1 K5preset8=1 13991
+0  3067
+K3preset3=1 K6preset7=1 12206
+0  4208
+K3preset4=1 K3preset5=1 26712
+0  6938
+K3preset4=1 K3preset6=1 22750
+0  5716
+K3preset4=1 K3preset7=1 26309
+0  6022
+K3preset4=1 K3preset8=1 24726
+0  5519
+K3preset4=1 K4preset1=1 28231
+0  7170
+K3preset4=1 K4preset2=1 26103
+0  6899
+K3preset4=1 K4preset3=1 24330
+0  5678
+K3preset4=1 K4preset4=1 26777
+0  6506
+K3preset4=1 K4preset5=1 24684
+0  6503
+K3preset4=1 K4preset6=1 18342
+0  4246
+K3preset4=1 K4preset7=1 25417
+0  6146
+K3preset4=1 K5preset1=1 12397
+0  3354
+K3preset4=1 K5preset3=1 11837
+0  3507
+K3preset4=1 K5preset5=1 16052
+0  4410
+K3preset4=1 K5preset8=1 14990
+0  3508
+K3preset4=1 K6preset1=1 9743
+0  3031
+K3preset4=1 K6preset3=1 13898
+0  3622
+K3preset4=1 K6preset4=1 12277
+0  3458
+K3preset4=1 K6preset7=1 14753
+0  5304
+K3preset5=1 K3preset6=1 33129
+0  8566
+K3preset5=1 K3preset7=1 29203
+0  7218
+K3preset5=1 K3preset8=1 30409
+0  7484
+K3preset5=1 K4preset1=1 33110
+0  8547
+K3preset5=1 K4preset2=1 32878
+0  9025
+K3preset5=1 K4preset3=1 36567
+0  10389
+K3preset5=1 K4preset4=1 35220
+0  9304
+K3preset5=1 K4preset5=1 24818
+0  7208
+K3preset5=1 K4preset6=1 28083
+0  7601
+K3preset5=1 K4preset7=1 29985
+0  7951
+K3preset5=1 K5preset1=1 18108
+0  5208
+K3preset5=1 K5preset2=1 20088
+0  5992
+K3preset5=1 K5preset3=1 18731
+0  6079
+K3preset5=1 K5preset4=1 9488
+0  3356
+K3preset5=1 K5preset5=1 22702
+0  7241
+K3preset5=1 K5preset6=1 19339
+0  5166
+K3preset5=1 K5preset7=1 17203
+0  4886
+K3preset5=1 K5preset8=1 18664
+0  5309
+K3preset5=1 K6preset1=1 14426
+0  4866
+K3preset5=1 K6preset2=1 16435
+0  5105
+K3preset5=1 K6preset3=1 20427
+0  5870
+K3preset5=1 K6preset4=1 18511
+0  5501
+K3preset5=1 K6preset5=1 13527
+0  4605
+K3preset5=1 K6preset6=1 11902
+0  4478
+K3preset5=1 K6preset7=1 23494
+0  8798
+K3preset6=1 K3preset7=1 25414
+0  6194
+K3preset6=1 K3preset8=1 27844
+0  6697
+K3preset6=1 K4preset1=1 31376
+0  7819
+K3preset6=1 K4preset2=1 31770
+0  8080
+K3preset6=1 K4preset3=1 30839
+0  7868
+K3preset6=1 K4preset4=1 31513
+0  8224
+K3preset6=1 K4preset5=1 22681
+0  6199
+K3preset6=1 K4preset6=1 23231
+0  5868
+K3preset6=1 K4preset7=1 28067
+0  7227
+K3preset6=1 K5preset1=1 13982
+0  4504
+K3preset6=1 K5preset2=1 15243
+0  4502
+K3preset6=1 K5preset3=1 15298
+0  4488
+K3preset6=1 K5preset5=1 18941
+0  5864
+K3preset6=1 K5preset6=1 15489
+0  3822
+K3preset6=1 K5preset7=1 12923
+0  3653
+K3preset6=1 K5preset8=1 14601
+0  4106
+K3preset6=1 K6preset1=1 12053
+0  4526
+K3preset6=1 K6preset2=1 12329
+0  3539
+K3preset6=1 K6preset3=1 15497
+0  4239
+K3preset6=1 K6preset4=1 14631
+0  3994
+K3preset6=1 K6preset5=1 11068
+0  3382
+K3preset6=1 K6preset6=1 10037
+0  3581
+K3preset6=1 K6preset7=1 18960
+0  6452
+K3preset7=1 K3preset8=1 29005
+0  6589
+K3preset7=1 K4preset1=1 31623
+0  7720
+K3preset7=1 K4preset2=1 30328
+0  7287
+K3preset7=1 K4preset3=1 28666
+0  6849
+K3preset7=1 K4preset4=1 30234
+0  6994
+K3preset7=1 K4preset5=1 25669
+0  6723
+K3preset7=1 K4preset6=1 21990
+0  5027
+K3preset7=1 K4preset7=1 28673
+0  7012
+K3preset7=1 K5preset1=1 14370
+0  3873
+K3preset7=1 K5preset2=1 15143
+0  3942
+K3preset7=1 K5preset3=1 13696
+0  4182
+K3preset7=1 K5preset5=1 18045
+0  4898
+K3preset7=1 K5preset6=1 14501
+0  3326
+K3preset7=1 K5preset7=1 12933
+0  3139
+K3preset7=1 K5preset8=1 15794
+0  3673
+K3preset7=1 K6preset1=1 10497
+0  3195
+K3preset7=1 K6preset2=1 12663
+0  3137
+K3preset7=1 K6preset3=1 14681
+0  3452
+K3preset7=1 K6preset4=1 12553
+0  3196
+K3preset7=1 K6preset5=1 9720
+0  3391
+K3preset7=1 K6preset6=1 9675
+0  3054
+K3preset7=1 K6preset7=1 16730
+0  5390
+K3preset8=1 K4preset1=1 31354
+0  7498
+K3preset8=1 K4preset2=1 29963
+0  6788
+K3preset8=1 K4preset3=1 29326
+0  7145
+K3preset8=1 K4preset4=1 31003
+0  7060
+K3preset8=1 K4preset5=1 24979
+0  6226
+K3preset8=1 K4preset6=1 21037
+0  4809
+K3preset8=1 K4preset7=1 28812
+0  7047
+K3preset8=1 K5preset1=1 13775
+0  3030
+K3preset8=1 K5preset2=1 17387
+0  4187
+K3preset8=1 K5preset3=1 13421
+0  3335
+K3preset8=1 K5preset5=1 17972
+0  4849
+K3preset8=1 K5preset6=1 14691
+0  3245
+K3preset8=1 K5preset7=1 13863
+0  3416
+K3preset8=1 K5preset8=1 15781
+0  4107
+K3preset8=1 K6preset1=1 10876
+0  3319
+K3preset8=1 K6preset2=1 12007
+0  3331
+K3preset8=1 K6preset3=1 16217
+0  3898
+K3preset8=1 K6preset4=1 13632
+0  3327
+K3preset8=1 K6preset5=1 9891
+0  3212
+K3preset8=1 K6preset7=1 17597
+0  5770
+K4preset1=1 K4preset2=1 37572
+0  9192
+K4preset1=1 K4preset3=1 33438
+0  7878
+K4preset1=1 K4preset4=1 35413
+0  9120
+K4preset1=1 K4preset5=1 29393
+0  7990
+K4preset1=1 K4preset6=1 25886
+0  6058
+K4preset1=1 K4preset7=1 34678
+0  8472
+K4preset1=1 K4preset8=1 20928
+0  3164
+K4preset1=1 K5preset1=1 16976
+0  4821
+K4preset1=1 K5preset2=1 18156
+0  5094
+K4preset1=1 K5preset3=1 17221
+0  5208
+K4preset1=1 K5preset5=1 21702
+0  5873
+K4preset1=1 K5preset6=1 17999
+0  3913
+K4preset1=1 K5preset7=1 15511
+0  4692
+K4preset1=1 K5preset8=1 18384
+0  4385
+K4preset1=1 K6preset1=1 12891
+0  4009
+K4preset1=1 K6preset2=1 13490
+0  3858
+K4preset1=1 K6preset3=1 17386
+0  4514
+K4preset1=1 K6preset4=1 15165
+0  4055
+K4preset1=1 K6preset5=1 12219
+0  4332
+K4preset1=1 K6preset6=1 12186
+0  4245
+K4preset1=1 K6preset7=1 20292
+0  7082
+K4preset2=1 K4preset3=1 36404
+0  8979
+K4preset2=1 K4preset4=1 37036
+0  9748
+K4preset2=1 K4preset5=1 27866
+0  7510
+K4preset2=1 K4preset6=1 26094
+0  6301
+K4preset2=1 K4preset7=1 33053
+0  8216
+K4preset2=1 K5preset1=1 17838
+0  4561
+K4preset2=1 K5preset2=1 19277
+0  4894
+K4preset2=1 K5preset3=1 17294
+0  5070
+K4preset2=1 K5preset5=1 22454
+0  6864
+K4preset2=1 K5preset6=1 18414
+0  4573
+K4preset2=1 K5preset7=1 15244
+0  4170
+K4preset2=1 K5preset8=1 18665
+0  4574
+K4preset2=1 K6preset1=1 13940
+0  4978
+K4preset2=1 K6preset2=1 14017
+0  4229
+K4preset2=1 K6preset3=1 19214
+0  4805
+K4preset2=1 K6preset4=1 15361
+0  3932
+K4preset2=1 K6preset5=1 12790
+0  4436
+K4preset2=1 K6preset6=1 12485
+0  4338
+K4preset2=1 K6preset7=1 21464
+0  7408
+K4preset3=1 K4preset4=1 36637
+0  9213
+K4preset3=1 K4preset5=1 26528
+0  6989
+K4preset3=1 K4preset6=1 28099
+0  7231
+K4preset3=1 K4preset7=1 31762
+0  7971
+K4preset3=1 K5preset1=1 19383
+0  5713
+K4preset3=1 K5preset2=1 20613
+0  6524
+K4preset3=1 K5preset3=1 19383
+0  6478
+K4preset3=1 K5preset4=1 9704
+0  3130
+K4preset3=1 K5preset5=1 23152
+0  7509
+K4preset3=1 K5preset6=1 20341
+0  5795
+K4preset3=1 K5preset7=1 18247
+0  5161
+K4preset3=1 K5preset8=1 20494
+0  5823
+K4preset3=1 K6preset1=1 14772
+0  5123
+K4preset3=1 K6preset2=1 17892
+0  5479
+K4preset3=1 K6preset3=1 20478
+0  5644
+K4preset3=1 K6preset4=1 19229
+0  6074
+K4preset3=1 K6preset5=1 14895
+0  5631
+K4preset3=1 K6preset6=1 12960
+0  5040
+K4preset3=1 K6preset7=1 23557
+0  8778
+K4preset4=1 K4preset5=1 28488
+0  7533
+K4preset4=1 K4preset6=1 27099
+0  6487
+K4preset4=1 K4preset7=1 32854
+0  7987
+K4preset4=1 K5preset1=1 17163
+0  4171
+K4preset4=1 K5preset2=1 19306
+0  5116
+K4preset4=1 K5preset3=1 15705
+0  5001
+K4preset4=1 K5preset5=1 21834
+0  6001
+K4preset4=1 K5preset6=1 18287
+0  4818
+K4preset4=1 K5preset7=1 14880
+0  4155
+K4preset4=1 K5preset8=1 19992
+0  5359
+K4preset4=1 K6preset1=1 13689
+0  4844
+K4preset4=1 K6preset2=1 14619
+0  4083
+K4preset4=1 K6preset3=1 18624
+0  5149
+K4preset4=1 K6preset4=1 16298
+0  3892
+K4preset4=1 K6preset5=1 11706
+0  4038
+K4preset4=1 K6preset6=1 10732
+0  3907
+K4preset4=1 K6preset7=1 20635
+0  7372
+K4preset5=1 K4preset6=1 20557
+0  5677
+K4preset5=1 K4preset7=1 25589
+0  6585
+K4preset5=1 K4preset8=1 18897
+0  3094
+K4preset5=1 K5preset1=1 12999
+0  3124
+K4preset5=1 K5preset2=1 15005
+0  4041
+K4preset5=1 K5preset3=1 12569
+0  3737
+K4preset5=1 K5preset5=1 15802
+0  5061
+K4preset5=1 K5preset6=1 13753
+0  3543
+K4preset5=1 K5preset8=1 15042
+0  3927
+K4preset5=1 K6preset1=1 8893
+0  3516
+K4preset5=1 K6preset2=1 11324
+0  3331
+K4preset5=1 K6preset3=1 12401
+0  3445
+K4preset5=1 K6preset4=1 10938
+0  3392
+K4preset5=1 K6preset5=1 7682
+0  3047
+K4preset5=1 K6preset6=1 8411
+0  3166
+K4preset5=1 K6preset7=1 14610
+0  6045
+K4preset6=1 K4preset7=1 23698
+0  5422
+K4preset6=1 K5preset1=1 16723
+0  4314
+K4preset6=1 K5preset2=1 18286
+0  5042
+K4preset6=1 K5preset3=1 16889
+0  5312
+K4preset6=1 K5preset4=1 11016
+0  3849
+K4preset6=1 K5preset5=1 20126
+0  6666
+K4preset6=1 K5preset6=1 17657
+0  4781
+K4preset6=1 K5preset7=1 15622
+0  3836
+K4preset6=1 K5preset8=1 18587
+0  4921
+K4preset6=1 K6preset1=1 14496
+0  5129
+K4preset6=1 K6preset2=1 15471
+0  4668
+K4preset6=1 K6preset3=1 20312
+0  5671
+K4preset6=1 K6preset4=1 15605
+0  4434
+K4preset6=1 K6preset5=1 12935
+0  4154
+K4preset6=1 K6preset6=1 11126
+0  3216
+K4preset6=1 K6preset7=1 21589
+0  7486
+K4preset7=1 K4preset8=1 18888
+0  3031
+K4preset7=1 K5preset1=1 16704
+0  4193
+K4preset7=1 K5preset2=1 16676
+0  4757
+K4preset7=1 K5preset3=1 14942
+0  4475
+K4preset7=1 K5preset5=1 19327
+0  5062
+K4preset7=1 K5preset6=1 16541
+0  4118
+K4preset7=1 K5preset7=1 14832
+0  3628
+K4preset7=1 K5preset8=1 17730
+0  4070
+K4preset7=1 K6preset1=1 11783
+0  3788
+K4preset7=1 K6preset2=1 13750
+0  4127
+K4preset7=1 K6preset3=1 16873
+0  4441
+K4preset7=1 K6preset4=1 13282
+0  3638
+K4preset7=1 K6preset5=1 10982
+0  4133
+K4preset7=1 K6preset6=1 10372
+0  3639
+K4preset7=1 K6preset7=1 18318
+0  6695
+K5preset1=1 K5preset2=1 20167
+0  5453
+K5preset1=1 K5preset3=1 16639
+0  5884
+K5preset1=1 K5preset5=1 16542
+0  4883
+K5preset1=1 K5preset6=1 17491
+0  4313
+K5preset1=1 K5preset7=1 17401
+0  4716
+K5preset1=1 K5preset8=1 16513
+0  4026
+K5preset1=1 K6preset1=1 12176
+0  4009
+K5preset1=1 K6preset2=1 14064
+0  4172
+K5preset1=1 K6preset3=1 17267
+0  4912
+K5preset1=1 K6preset4=1 15142
+0  5196
+K5preset1=1 K6preset5=1 12882
+0  4577
+K5preset1=1 K6preset6=1 13188
+0  4489
+K5preset1=1 K6preset7=1 18485
+0  6361
+K5preset2=1 K5preset3=1 17345
+0  5694
+K5preset2=1 K5preset5=1 18760
+0  5910
+K5preset2=1 K5preset6=1 18029
+0  4665
+K5preset2=1 K5preset7=1 16327
+0  4721
+K5preset2=1 K5preset8=1 17071
+0  4352
+K5preset2=1 K6preset1=1 12134
+0  4378
+K5preset2=1 K6preset2=1 14634
+0  4641
+K5preset2=1 K6preset3=1 19061
+0  5716
+K5preset2=1 K6preset4=1 14663
+0  4672
+K5preset2=1 K6preset5=1 13443
+0  5012
+K5preset2=1 K6preset6=1 14394
+0  4142
+K5preset2=1 K6preset7=1 19282
+0  7266
+K5preset3=1 K5preset4=1 11411
+0  4315
+K5preset3=1 K5preset5=1 21913
+0  7373
+K5preset3=1 K5preset6=1 17655
+0  5711
+K5preset3=1 K5preset7=1 19028
+0  6417
+K5preset3=1 K5preset8=1 14202
+0  4646
+K5preset3=1 K6preset1=1 15743
+0  5390
+K5preset3=1 K6preset2=1 17111
+0  6400
+K5preset3=1 K6preset3=1 15762
+0  5475
+K5preset3=1 K6preset4=1 16903
+0  5945
+K5preset3=1 K6preset5=1 14470
+0  5947
+K5preset3=1 K6preset6=1 14384
+0  5013
+K5preset3=1 K6preset7=1 20745
+0  8595
+K5preset4=1 K5preset5=1 11675
+0  4234
+K5preset4=1 K5preset6=1 11427
+0  3500
+K5preset4=1 K5preset7=1 9582
+0  3357
+K5preset4=1 K6preset1=1 9827
+0  3718
+K5preset4=1 K6preset3=1 9540
+0  3731
+K5preset4=1 K6preset5=1 9068
+0  3528
+K5preset4=1 K6preset7=1 11944
+0  4771
+K5preset5=1 K5preset6=1 22569
+0  6424
+K5preset5=1 K5preset7=1 21187
+0  6351
+K5preset5=1 K5preset8=1 18932
+0  5624
+K5preset5=1 K6preset1=1 17846
+0  6409
+K5preset5=1 K6preset2=1 18149
+0  6361
+K5preset5=1 K6preset3=1 17828
+0  6426
+K5preset5=1 K6preset4=1 18531
+0  5552
+K5preset5=1 K6preset5=1 14701
+0  5494
+K5preset5=1 K6preset6=1 13352
+0  5374
+K5preset5=1 K6preset7=1 21213
+0  8469
+K5preset6=1 K5preset7=1 21132
+0  5827
+K5preset6=1 K5preset8=1 18466
+0  3905
+K5preset6=1 K6preset1=1 18302
+0  5536
+K5preset6=1 K6preset2=1 18689
+0  5616
+K5preset6=1 K6preset3=1 17547
+0  5268
+K5preset6=1 K6preset4=1 18191
+0  5105
+K5preset6=1 K6preset5=1 13442
+0  4236
+K5preset6=1 K6preset6=1 11139
+0  3338
+K5preset6=1 K6preset7=1 19109
+0  6582
+K5preset7=1 K5preset8=1 15917
+0  4216
+K5preset7=1 K6preset1=1 15707
+0  4673
+K5preset7=1 K6preset2=1 19373
+0  5727
+K5preset7=1 K6preset3=1 17324
+0  5665
+K5preset7=1 K6preset4=1 18134
+0  5103
+K5preset7=1 K6preset5=1 14376
+0  5062
+K5preset7=1 K6preset6=1 13417
+0  3843
+K5preset7=1 K6preset7=1 17989
+0  6424
+K5preset8=1 K6preset1=1 12838
+0  3920
+K5preset8=1 K6preset2=1 14904
+0  4341
+K5preset8=1 K6preset3=1 19452
+0  5583
+K5preset8=1 K6preset4=1 14548
+0  4239
+K5preset8=1 K6preset5=1 11517
+0  3957
+K5preset8=1 K6preset6=1 11082
+0  3244
+K5preset8=1 K6preset7=1 18467
+0  6441
+K6preset1=1 K6preset2=1 15743
+0  4766
+K6preset1=1 K6preset3=1 15463
+0  5074
+K6preset1=1 K6preset4=1 15371
+0  4078
+K6preset1=1 K6preset5=1 13231
+0  4419
+K6preset1=1 K6preset6=1 10773
+0  3493
+K6preset1=1 K6preset7=1 16971
+0  6671
+K6preset2=1 K6preset3=1 18279
+0  6100
+K6preset2=1 K6preset4=1 19480
+0  5423
+K6preset2=1 K6preset5=1 13444
+0  4425
+K6preset2=1 K6preset6=1 12316
+0  3795
+K6preset2=1 K6preset7=1 17947
+0  6615
+K6preset3=1 K6preset4=1 17776
+0  4951
+K6preset3=1 K6preset5=1 14329
+0  4763
+K6preset3=1 K6preset6=1 12229
+0  3385
+K6preset3=1 K6preset7=1 20267
+0  7537
+K6preset4=1 K6preset5=1 15712
+0  4807
+K6preset4=1 K6preset6=1 12900
+0  4279
+K6preset4=1 K6preset7=1 19162
+0  6521
+K6preset5=1 K6preset6=1 12615
+0  4409
+K6preset5=1 K6preset7=1 16343
+0  6467
+K6preset6=1 K6preset7=1 15055
+0  5993
+
+Size of set of large itemsets L(3): 823
+
+Large Itemsets L(3):
+K1preset1=1 K2preset6=1 K6preset7=1 7241
+0  3068
+K1preset1=1 K6preset3=1 K6preset7=1 6046
+0  3077
+K1preset4=1 K2preset1=1 K4preset3=1 12521
+0  3213
+K1preset4=1 K2preset2=1 K2preset5=1 11715
+0  3082
+K1preset4=1 K2preset2=1 K3preset5=1 11436
+0  3464
+K1preset4=1 K2preset2=1 K4preset3=1 11436
+0  3230
+K1preset4=1 K2preset2=1 K6preset3=1 9448
+0  3112
+K1preset4=1 K2preset2=1 K6preset7=1 8782
+0  3329
+K1preset4=1 K2preset5=1 K2preset6=1 12269
+0  3165
+K1preset4=1 K2preset5=1 K3preset5=1 11412
+0  3174
+K1preset4=1 K2preset5=1 K4preset3=1 11967
+0  3045
+K1preset4=1 K2preset5=1 K6preset7=1 9261
+0  3369
+K1preset4=1 K2preset6=1 K3preset5=1 11351
+0  3494
+K1preset4=1 K2preset6=1 K4preset3=1 11485
+0  3355
+K1preset4=1 K2preset7=1 K3preset5=1 10635
+0  3197
+K1preset4=1 K2preset7=1 K4preset3=1 10615
+0  3187
+K1preset4=1 K3preset1=1 K3preset4=1 9704
+0  3094
+K1preset4=1 K3preset1=1 K3preset5=1 11302
+0  3509
+K1preset4=1 K3preset1=1 K3preset6=1 10946
+0  3344
+K1preset4=1 K3preset1=1 K4preset1=1 11355
+0  3362
+K1preset4=1 K3preset1=1 K4preset2=1 11817
+0  3800
+K1preset4=1 K3preset1=1 K4preset3=1 10903
+0  3297
+K1preset4=1 K3preset1=1 K4preset4=1 10974
+0  3205
+K1preset4=1 K3preset1=1 K4preset5=1 9591
+0  3104
+K1preset4=1 K3preset1=1 K4preset7=1 10850
+0  3411
+K1preset4=1 K3preset4=1 K3preset5=1 10968
+0  3352
+K1preset4=1 K3preset4=1 K4preset1=1 11223
+0  3111
+K1preset4=1 K3preset4=1 K4preset2=1 10259
+0  3463
+K1preset4=1 K3preset4=1 K4preset4=1 10784
+0  3036
+K1preset4=1 K3preset4=1 K4preset5=1 10550
+0  3483
+K1preset4=1 K3preset5=1 K3preset6=1 12950
+0  3682
+K1preset4=1 K3preset5=1 K3preset7=1 12376
+0  3220
+K1preset4=1 K3preset5=1 K3preset8=1 12791
+0  3327
+K1preset4=1 K3preset5=1 K4preset1=1 12664
+0  3653
+K1preset4=1 K3preset5=1 K4preset2=1 12710
+0  3999
+K1preset4=1 K3preset5=1 K4preset3=1 14412
+0  4536
+K1preset4=1 K3preset5=1 K4preset4=1 13610
+0  3755
+K1preset4=1 K3preset5=1 K4preset5=1 10356
+0  3598
+K1preset4=1 K3preset5=1 K4preset6=1 12130
+0  3171
+K1preset4=1 K3preset5=1 K4preset7=1 11508
+0  3631
+K1preset4=1 K3preset5=1 K5preset5=1 9996
+0  3429
+K1preset4=1 K3preset5=1 K6preset7=1 9670
+0  3760
+K1preset4=1 K3preset6=1 K4preset1=1 12114
+0  3273
+K1preset4=1 K3preset6=1 K4preset2=1 12470
+0  3533
+K1preset4=1 K3preset6=1 K4preset3=1 12469
+0  3361
+K1preset4=1 K3preset6=1 K4preset4=1 12263
+0  3205
+K1preset4=1 K3preset6=1 K4preset7=1 11228
+0  3270
+K1preset4=1 K3preset7=1 K4preset1=1 13420
+0  3575
+K1preset4=1 K3preset7=1 K4preset2=1 12217
+0  3378
+K1preset4=1 K3preset7=1 K4preset3=1 11972
+0  3071
+K1preset4=1 K3preset7=1 K4preset5=1 10921
+0  3148
+K1preset4=1 K3preset7=1 K4preset7=1 11886
+0  3104
+K1preset4=1 K3preset8=1 K4preset1=1 13024
+0  3241
+K1preset4=1 K3preset8=1 K4preset2=1 11981
+0  3105
+K1preset4=1 K3preset8=1 K4preset3=1 12314
+0  3240
+K1preset4=1 K3preset8=1 K4preset7=1 11990
+0  3202
+K1preset4=1 K4preset1=1 K4preset2=1 14426
+0  4031
+K1preset4=1 K4preset1=1 K4preset3=1 13005
+0  3461
+K1preset4=1 K4preset1=1 K4preset4=1 13462
+0  3943
+K1preset4=1 K4preset1=1 K4preset5=1 12095
+0  3804
+K1preset4=1 K4preset1=1 K4preset7=1 13772
+0  3890
+K1preset4=1 K4preset1=1 K6preset7=1 8546
+0  3089
+K1preset4=1 K4preset2=1 K4preset3=1 14190
+0  3887
+K1preset4=1 K4preset2=1 K4preset4=1 13642
+0  4061
+K1preset4=1 K4preset2=1 K4preset5=1 11363
+0  3661
+K1preset4=1 K4preset2=1 K4preset7=1 12765
+0  3665
+K1preset4=1 K4preset2=1 K5preset5=1 9218
+0  3254
+K1preset4=1 K4preset2=1 K6preset7=1 8516
+0  3234
+K1preset4=1 K4preset3=1 K4preset4=1 14229
+0  3554
+K1preset4=1 K4preset3=1 K4preset5=1 10673
+0  3391
+K1preset4=1 K4preset3=1 K4preset7=1 12729
+0  3759
+K1preset4=1 K4preset3=1 K5preset5=1 9765
+0  3555
+K1preset4=1 K4preset3=1 K6preset7=1 9853
+0  3793
+K1preset4=1 K4preset4=1 K4preset5=1 11429
+0  3471
+K1preset4=1 K4preset4=1 K4preset7=1 12758
+0  3613
+K1preset4=1 K4preset4=1 K6preset7=1 8366
+0  3051
+K1preset4=1 K4preset5=1 K4preset7=1 10361
+0  3268
+K1preset4=1 K4preset7=1 K6preset7=1 7726
+0  3067
+K1preset4=1 K5preset2=1 K6preset7=1 7217
+0  3127
+K1preset4=1 K5preset5=1 K6preset7=1 7942
+0  3173
+K1preset5=1 K3preset5=1 K3preset6=1 9474
+0  3003
+K1preset5=1 K3preset5=1 K4preset1=1 9118
+0  3095
+K1preset5=1 K3preset5=1 K4preset2=1 9608
+0  3092
+K1preset5=1 K3preset5=1 K4preset3=1 10473
+0  3842
+K1preset5=1 K3preset5=1 K4preset4=1 10171
+0  3303
+K1preset5=1 K4preset1=1 K4preset2=1 10938
+0  3235
+K1preset5=1 K4preset1=1 K4preset4=1 10353
+0  3318
+K1preset5=1 K4preset1=1 K4preset5=1 8783
+0  3144
+K1preset5=1 K4preset1=1 K4preset7=1 9597
+0  3018
+K1preset5=1 K4preset2=1 K4preset4=1 11406
+0  3336
+K1preset5=1 K4preset3=1 K4preset4=1 10589
+0  3233
+K2preset1=1 K2preset2=1 K2preset7=1 12506
+0  3163
+K2preset1=1 K2preset2=1 K3preset5=1 12373
+0  3589
+K2preset1=1 K2preset2=1 K4preset3=1 13947
+0  3588
+K2preset1=1 K2preset7=1 K3preset5=1 12033
+0  3685
+K2preset1=1 K2preset7=1 K4preset2=1 13119
+0  3400
+K2preset1=1 K2preset7=1 K4preset3=1 12960
+0  3641
+K2preset1=1 K2preset7=1 K4preset4=1 13064
+0  3393
+K2preset1=1 K2preset7=1 K5preset5=1 9282
+0  3025
+K2preset1=1 K3preset1=1 K3preset5=1 11772
+0  3161
+K2preset1=1 K3preset1=1 K3preset6=1 11154
+0  3060
+K2preset1=1 K3preset1=1 K4preset1=1 11851
+0  3146
+K2preset1=1 K3preset1=1 K4preset2=1 12472
+0  3381
+K2preset1=1 K3preset1=1 K4preset4=1 11706
+0  3048
+K2preset1=1 K3preset1=1 K4preset7=1 11279
+0  3150
+K2preset1=1 K3preset5=1 K3preset6=1 13840
+0  3399
+K2preset1=1 K3preset5=1 K4preset1=1 13971
+0  3480
+K2preset1=1 K3preset5=1 K4preset2=1 13596
+0  3549
+K2preset1=1 K3preset5=1 K4preset3=1 15187
+0  4133
+K2preset1=1 K3preset5=1 K4preset4=1 14389
+0  3584
+K2preset1=1 K3preset5=1 K4preset6=1 12499
+0  3327
+K2preset1=1 K3preset5=1 K4preset7=1 11874
+0  3058
+K2preset1=1 K3preset5=1 K5preset5=1 10227
+0  3273
+K2preset1=1 K3preset5=1 K6preset7=1 9539
+0  3202
+K2preset1=1 K3preset6=1 K4preset1=1 13464
+0  3458
+K2preset1=1 K3preset6=1 K4preset2=1 13402
+0  3394
+K2preset1=1 K3preset6=1 K4preset3=1 13318
+0  3346
+K2preset1=1 K3preset6=1 K4preset4=1 13027
+0  3344
+K2preset1=1 K3preset7=1 K4preset1=1 13884
+0  3223
+K2preset1=1 K3preset8=1 K4preset1=1 13756
+0  3328
+K2preset1=1 K4preset1=1 K4preset2=1 15782
+0  3529
+K2preset1=1 K4preset1=1 K4preset3=1 14209
+0  3196
+K2preset1=1 K4preset1=1 K4preset4=1 14756
+0  3668
+K2preset1=1 K4preset1=1 K4preset5=1 12056
+0  3156
+K2preset1=1 K4preset1=1 K4preset7=1 14662
+0  3529
+K2preset1=1 K4preset2=1 K4preset3=1 15244
+0  3690
+K2preset1=1 K4preset2=1 K4preset4=1 15865
+0  4156
+K2preset1=1 K4preset2=1 K4preset5=1 11882
+0  3005
+K2preset1=1 K4preset2=1 K4preset7=1 13283
+0  3231
+K2preset1=1 K4preset2=1 K5preset5=1 10252
+0  3100
+K2preset1=1 K4preset3=1 K4preset4=1 15535
+0  3746
+K2preset1=1 K4preset3=1 K4preset7=1 13090
+0  3188
+K2preset1=1 K4preset3=1 K5preset5=1 10105
+0  3037
+K2preset1=1 K4preset3=1 K6preset7=1 9867
+0  3268
+K2preset1=1 K4preset4=1 K4preset5=1 12122
+0  3137
+K2preset1=1 K4preset4=1 K4preset7=1 13454
+0  3348
+K2preset2=1 K2preset5=1 K2preset6=1 11928
+0  3300
+K2preset2=1 K2preset5=1 K2preset7=1 12088
+0  3306
+K2preset2=1 K2preset5=1 K3preset5=1 11557
+0  3169
+K2preset2=1 K2preset5=1 K4preset2=1 11450
+0  3062
+K2preset2=1 K2preset5=1 K6preset7=1 8896
+0  3160
+K2preset2=1 K2preset6=1 K2preset7=1 11065
+0  3015
+K2preset2=1 K2preset6=1 K4preset3=1 11387
+0  3143
+K2preset2=1 K2preset7=1 K3preset5=1 10690
+0  3319
+K2preset2=1 K2preset7=1 K4preset2=1 11414
+0  3092
+K2preset2=1 K2preset7=1 K4preset3=1 11366
+0  3460
+K2preset2=1 K2preset7=1 K4preset4=1 11659
+0  3181
+K2preset2=1 K2preset7=1 K6preset3=1 9113
+0  3029
+K2preset2=1 K2preset7=1 K6preset7=1 8037
+0  3102
+K2preset2=1 K2preset8=1 K4preset3=1 9769
+0  3121
+K2preset2=1 K3preset1=1 K3preset5=1 10460
+0  3233
+K2preset2=1 K3preset1=1 K4preset1=1 10217
+0  3162
+K2preset2=1 K3preset1=1 K4preset2=1 11125
+0  3535
+K2preset2=1 K3preset1=1 K4preset4=1 10861
+0  3082
+K2preset2=1 K3preset1=1 K4preset7=1 10417
+0  3272
+K2preset2=1 K3preset4=1 K3preset5=1 10726
+0  3301
+K2preset2=1 K3preset4=1 K4preset1=1 11036
+0  3238
+K2preset2=1 K3preset4=1 K4preset2=1 10332
+0  3121
+K2preset2=1 K3preset5=1 K3preset6=1 13038
+0  3555
+K2preset2=1 K3preset5=1 K3preset8=1 11885
+0  3175
+K2preset2=1 K3preset5=1 K4preset1=1 13284
+0  3736
+K2preset2=1 K3preset5=1 K4preset2=1 12969
+0  3967
+K2preset2=1 K3preset5=1 K4preset3=1 14144
+0  4215
+K2preset2=1 K3preset5=1 K4preset4=1 13573
+0  3865
+K2preset2=1 K3preset5=1 K4preset5=1 9408
+0  3051
+K2preset2=1 K3preset5=1 K4preset6=1 11428
+0  3274
+K2preset2=1 K3preset5=1 K4preset7=1 11866
+0  3753
+K2preset2=1 K3preset5=1 K6preset7=1 8820
+0  3594
+K2preset2=1 K3preset6=1 K4preset1=1 12238
+0  3298
+K2preset2=1 K3preset6=1 K4preset2=1 12417
+0  3305
+K2preset2=1 K3preset6=1 K4preset4=1 12214
+0  3276
+K2preset2=1 K3preset6=1 K4preset7=1 11038
+0  3118
+K2preset2=1 K3preset7=1 K4preset1=1 12662
+0  3065
+K2preset2=1 K3preset7=1 K4preset7=1 10980
+0  3052
+K2preset2=1 K3preset8=1 K4preset1=1 12013
+0  3003
+K2preset2=1 K4preset1=1 K4preset2=1 14405
+0  3781
+K2preset2=1 K4preset1=1 K4preset4=1 13635
+0  3742
+K2preset2=1 K4preset1=1 K4preset5=1 11596
+0  3436
+K2preset2=1 K4preset1=1 K4preset7=1 13330
+0  3496
+K2preset2=1 K4preset2=1 K4preset3=1 14077
+0  3678
+K2preset2=1 K4preset2=1 K4preset4=1 14831
+0  4054
+K2preset2=1 K4preset2=1 K4preset5=1 10940
+0  3391
+K2preset2=1 K4preset2=1 K4preset7=1 12866
+0  3557
+K2preset2=1 K4preset3=1 K4preset4=1 13771
+0  3345
+K2preset2=1 K4preset3=1 K4preset7=1 11939
+0  3124
+K2preset2=1 K4preset3=1 K6preset7=1 9423
+0  3569
+K2preset2=1 K4preset4=1 K4preset5=1 11077
+0  3248
+K2preset2=1 K4preset4=1 K4preset7=1 12562
+0  3209
+K2preset2=1 K4preset5=1 K4preset7=1 10073
+0  3045
+K2preset2=1 K4preset6=1 K6preset7=1 8195
+0  3019
+K2preset2=1 K5preset3=1 K6preset7=1 7077
+0  3221
+K2preset2=1 K6preset3=1 K6preset7=1 8420
+0  3458
+K2preset3=1 K2preset5=1 K2preset6=1 11524
+0  3255
+K2preset3=1 K3preset5=1 K4preset2=1 11314
+0  3159
+K2preset3=1 K3preset5=1 K4preset3=1 12874
+0  3250
+K2preset3=1 K4preset1=1 K4preset2=1 12291
+0  3225
+K2preset3=1 K4preset1=1 K4preset4=1 11960
+0  3077
+K2preset4=1 K2preset5=1 K2preset7=1 10723
+0  3032
+K2preset5=1 K2preset6=1 K2preset7=1 14435
+0  3751
+K2preset5=1 K2preset6=1 K3preset5=1 12731
+0  3864
+K2preset5=1 K2preset6=1 K4preset2=1 12550
+0  3427
+K2preset5=1 K2preset6=1 K4preset3=1 14057
+0  3768
+K2preset5=1 K2preset6=1 K4preset4=1 11846
+0  3019
+K2preset5=1 K2preset6=1 K4preset7=1 11488
+0  3171
+K2preset5=1 K2preset6=1 K6preset7=1 9666
+0  3822
+K2preset5=1 K2preset7=1 K3preset5=1 11435
+0  3264
+K2preset5=1 K2preset7=1 K4preset2=1 13099
+0  3143
+K2preset5=1 K2preset7=1 K4preset3=1 12674
+0  3418
+K2preset5=1 K2preset7=1 K6preset7=1 8449
+0  3142
+K2preset5=1 K3preset1=1 K3preset5=1 11912
+0  3298
+K2preset5=1 K3preset1=1 K3preset6=1 11729
+0  3047
+K2preset5=1 K3preset1=1 K4preset1=1 11791
+0  3191
+K2preset5=1 K3preset1=1 K4preset2=1 12918
+0  3370
+K2preset5=1 K3preset1=1 K4preset7=1 12066
+0  3396
+K2preset5=1 K3preset4=1 K4preset2=1 11254
+0  3058
+K2preset5=1 K3preset5=1 K3preset6=1 14746
+0  3851
+K2preset5=1 K3preset5=1 K3preset8=1 12734
+0  3211
+K2preset5=1 K3preset5=1 K4preset1=1 13585
+0  3568
+K2preset5=1 K3preset5=1 K4preset2=1 13865
+0  3844
+K2preset5=1 K3preset5=1 K4preset3=1 15183
+0  4146
+K2preset5=1 K3preset5=1 K4preset4=1 14029
+0  3614
+K2preset5=1 K3preset5=1 K4preset7=1 12759
+0  3488
+K2preset5=1 K3preset5=1 K6preset7=1 9915
+0  3884
+K2preset5=1 K3preset6=1 K3preset8=1 12269
+0  3036
+K2preset5=1 K3preset6=1 K4preset1=1 13664
+0  3366
+K2preset5=1 K3preset6=1 K4preset2=1 14294
+0  3570
+K2preset5=1 K3preset6=1 K4preset3=1 14148
+0  3342
+K2preset5=1 K3preset6=1 K4preset4=1 13384
+0  3469
+K2preset5=1 K3preset6=1 K4preset7=1 12763
+0  3355
+K2preset5=1 K4preset1=1 K4preset2=1 16510
+0  4009
+K2preset5=1 K4preset1=1 K4preset3=1 13949
+0  3135
+K2preset5=1 K4preset1=1 K4preset4=1 14353
+0  3791
+K2preset5=1 K4preset1=1 K4preset5=1 11657
+0  3126
+K2preset5=1 K4preset1=1 K4preset7=1 15046
+0  3641
+K2preset5=1 K4preset1=1 K6preset7=1 8055
+0  3154
+K2preset5=1 K4preset2=1 K4preset3=1 15629
+0  3666
+K2preset5=1 K4preset2=1 K4preset4=1 15657
+0  3922
+K2preset5=1 K4preset2=1 K4preset7=1 14484
+0  3723
+K2preset5=1 K4preset2=1 K6preset7=1 8789
+0  3105
+K2preset5=1 K4preset3=1 K4preset4=1 15156
+0  3482
+K2preset5=1 K4preset3=1 K4preset7=1 13594
+0  3294
+K2preset5=1 K4preset3=1 K6preset7=1 9505
+0  3475
+K2preset5=1 K4preset4=1 K4preset7=1 13718
+0  3297
+K2preset5=1 K4preset7=1 K6preset7=1 7743
+0  3082
+K2preset5=1 K5preset3=1 K6preset7=1 7100
+0  3083
+K2preset6=1 K2preset7=1 K3preset5=1 11362
+0  3168
+K2preset6=1 K2preset7=1 K4preset2=1 12362
+0  3051
+K2preset6=1 K2preset7=1 K4preset3=1 12462
+0  3659
+K2preset6=1 K2preset7=1 K6preset7=1 8397
+0  3060
+K2preset6=1 K3preset1=1 K3preset5=1 9984
+0  3125
+K2preset6=1 K3preset1=1 K4preset2=1 10624
+0  3212
+K2preset6=1 K3preset1=1 K4preset3=1 10374
+0  3057
+K2preset6=1 K3preset1=1 K4preset7=1 9751
+0  3074
+K2preset6=1 K3preset5=1 K3preset6=1 12834
+0  3413
+K2preset6=1 K3preset5=1 K4preset1=1 12290
+0  3293
+K2preset6=1 K3preset5=1 K4preset2=1 12863
+0  4015
+K2preset6=1 K3preset5=1 K4preset3=1 15069
+0  4620
+K2preset6=1 K3preset5=1 K4preset4=1 13031
+0  3505
+K2preset6=1 K3preset5=1 K4preset5=1 10069
+0  3076
+K2preset6=1 K3preset5=1 K4preset7=1 11475
+0  3363
+K2preset6=1 K3preset5=1 K6preset7=1 9018
+0  3571
+K2preset6=1 K3preset6=1 K4preset2=1 12245
+0  3191
+K2preset6=1 K3preset6=1 K4preset3=1 12320
+0  3256
+K2preset6=1 K3preset6=1 K4preset4=1 12032
+0  3192
+K2preset6=1 K4preset1=1 K4preset2=1 13955
+0  3821
+K2preset6=1 K4preset1=1 K4preset3=1 12904
+0  3281
+K2preset6=1 K4preset1=1 K4preset4=1 13285
+0  3622
+K2preset6=1 K4preset1=1 K4preset5=1 11086
+0  3039
+K2preset6=1 K4preset1=1 K4preset7=1 13502
+0  3432
+K2preset6=1 K4preset2=1 K4preset3=1 15219
+0  3969
+K2preset6=1 K4preset2=1 K4preset4=1 14541
+0  4014
+K2preset6=1 K4preset2=1 K4preset5=1 10850
+0  3206
+K2preset6=1 K4preset2=1 K4preset7=1 12978
+0  3813
+K2preset6=1 K4preset2=1 K6preset7=1 9332
+0  3281
+K2preset6=1 K4preset3=1 K4preset4=1 14526
+0  3891
+K2preset6=1 K4preset3=1 K4preset5=1 10821
+0  3122
+K2preset6=1 K4preset3=1 K4preset7=1 13252
+0  3731
+K2preset6=1 K4preset3=1 K5preset2=1 9162
+0  3179
+K2preset6=1 K4preset3=1 K6preset7=1 9755
+0  3612
+K2preset6=1 K4preset4=1 K4preset5=1 10986
+0  3050
+K2preset6=1 K4preset4=1 K4preset7=1 12447
+0  3513
+K2preset6=1 K4preset4=1 K6preset7=1 7989
+0  3022
+K2preset6=1 K5preset3=1 K6preset7=1 7649
+0  3525
+K2preset6=1 K5preset5=1 K6preset7=1 7813
+0  3483
+K2preset7=1 K2preset8=1 K4preset3=1 9164
+0  3204
+K2preset7=1 K3preset1=1 K3preset5=1 12189
+0  3638
+K2preset7=1 K3preset1=1 K3preset6=1 11301
+0  3329
+K2preset7=1 K3preset1=1 K4preset1=1 12368
+0  3465
+K2preset7=1 K3preset1=1 K4preset2=1 13362
+0  3952
+K2preset7=1 K3preset1=1 K4preset3=1 11558
+0  3395
+K2preset7=1 K3preset1=1 K4preset4=1 12497
+0  3583
+K2preset7=1 K3preset1=1 K4preset5=1 10244
+0  3193
+K2preset7=1 K3preset1=1 K4preset7=1 11832
+0  3575
+K2preset7=1 K3preset4=1 K3preset5=1 10623
+0  3045
+K2preset7=1 K3preset4=1 K4preset1=1 12131
+0  3523
+K2preset7=1 K3preset4=1 K4preset2=1 11609
+0  3301
+K2preset7=1 K3preset4=1 K4preset4=1 11603
+0  3215
+K2preset7=1 K3preset4=1 K4preset5=1 10938
+0  3297
+K2preset7=1 K3preset5=1 K3preset6=1 13146
+0  3580
+K2preset7=1 K3preset5=1 K3preset7=1 12595
+0  3017
+K2preset7=1 K3preset5=1 K3preset8=1 12330
+0  3248
+K2preset7=1 K3preset5=1 K4preset1=1 13685
+0  3817
+K2preset7=1 K3preset5=1 K4preset2=1 13218
+0  3834
+K2preset7=1 K3preset5=1 K4preset3=1 13432
+0  4293
+K2preset7=1 K3preset5=1 K4preset4=1 13890
+0  3891
+K2preset7=1 K3preset5=1 K4preset5=1 10672
+0  3621
+K2preset7=1 K3preset5=1 K4preset6=1 11531
+0  3131
+K2preset7=1 K3preset5=1 K4preset7=1 12473
+0  3590
+K2preset7=1 K3preset5=1 K6preset7=1 9385
+0  3512
+K2preset7=1 K3preset6=1 K4preset1=1 13272
+0  3499
+K2preset7=1 K3preset6=1 K4preset2=1 13593
+0  3562
+K2preset7=1 K3preset6=1 K4preset3=1 12184
+0  3482
+K2preset7=1 K3preset6=1 K4preset4=1 12794
+0  3602
+K2preset7=1 K3preset6=1 K4preset5=1 10069
+0  3195
+K2preset7=1 K3preset6=1 K4preset7=1 11596
+0  3130
+K2preset7=1 K3preset7=1 K4preset1=1 14467
+0  3503
+K2preset7=1 K3preset7=1 K4preset2=1 13923
+0  3366
+K2preset7=1 K3preset7=1 K4preset3=1 12427
+0  3160
+K2preset7=1 K3preset7=1 K4preset4=1 14404
+0  3338
+K2preset7=1 K3preset7=1 K4preset5=1 11875
+0  3296
+K2preset7=1 K3preset7=1 K4preset7=1 12861
+0  3252
+K2preset7=1 K3preset8=1 K4preset1=1 13333
+0  3554
+K2preset7=1 K3preset8=1 K4preset2=1 13031
+0  3004
+K2preset7=1 K3preset8=1 K4preset3=1 11675
+0  3155
+K2preset7=1 K3preset8=1 K4preset4=1 13138
+0  3308
+K2preset7=1 K3preset8=1 K4preset5=1 11198
+0  3228
+K2preset7=1 K3preset8=1 K4preset7=1 11785
+0  3204
+K2preset7=1 K4preset1=1 K4preset2=1 17318
+0  4346
+K2preset7=1 K4preset1=1 K4preset3=1 14193
+0  3599
+K2preset7=1 K4preset1=1 K4preset4=1 15809
+0  4360
+K2preset7=1 K4preset1=1 K4preset5=1 13499
+0  3950
+K2preset7=1 K4preset1=1 K4preset6=1 12208
+0  3033
+K2preset7=1 K4preset1=1 K4preset7=1 14739
+0  3832
+K2preset7=1 K4preset1=1 K6preset7=1 9387
+0  3172
+K2preset7=1 K4preset2=1 K4preset3=1 15548
+0  4109
+K2preset7=1 K4preset2=1 K4preset4=1 16285
+0  4584
+K2preset7=1 K4preset2=1 K4preset5=1 13130
+0  3894
+K2preset7=1 K4preset2=1 K4preset6=1 11800
+0  3003
+K2preset7=1 K4preset2=1 K4preset7=1 14000
+0  3726
+K2preset7=1 K4preset2=1 K6preset7=1 9017
+0  3007
+K2preset7=1 K4preset3=1 K4preset4=1 14807
+0  4189
+K2preset7=1 K4preset3=1 K4preset5=1 11567
+0  3507
+K2preset7=1 K4preset3=1 K4preset6=1 11644
+0  3195
+K2preset7=1 K4preset3=1 K4preset7=1 13445
+0  3836
+K2preset7=1 K4preset3=1 K5preset2=1 7899
+0  3162
+K2preset7=1 K4preset3=1 K5preset5=1 9113
+0  3282
+K2preset7=1 K4preset3=1 K6preset7=1 9440
+0  3730
+K2preset7=1 K4preset4=1 K4preset5=1 13447
+0  3973
+K2preset7=1 K4preset4=1 K4preset7=1 14620
+0  3945
+K2preset7=1 K4preset4=1 K6preset7=1 8598
+0  3014
+K2preset7=1 K4preset5=1 K4preset7=1 11068
+0  3275
+K2preset7=1 K4preset6=1 K5preset5=1 8799
+0  3030
+K2preset7=1 K4preset6=1 K6preset7=1 9094
+0  3098
+K2preset7=1 K5preset5=1 K6preset7=1 7572
+0  3376
+K2preset7=1 K6preset3=1 K6preset7=1 7913
+0  3039
+K2preset8=1 K3preset5=1 K4preset2=1 9378
+0  3004
+K2preset8=1 K3preset5=1 K4preset3=1 11092
+0  3686
+K2preset8=1 K3preset5=1 K4preset4=1 10474
+0  3174
+K2preset8=1 K4preset2=1 K4preset3=1 10306
+0  3315
+K2preset8=1 K4preset2=1 K4preset4=1 9922
+0  3190
+K2preset8=1 K4preset3=1 K4preset4=1 10277
+0  3216
+K3preset1=1 K3preset3=1 K4preset1=1 12592
+0  3366
+K3preset1=1 K3preset3=1 K4preset2=1 12289
+0  3349
+K3preset1=1 K3preset4=1 K3preset5=1 12819
+0  3741
+K3preset1=1 K3preset4=1 K3preset6=1 11625
+0  3207
+K3preset1=1 K3preset4=1 K3preset7=1 12583
+0  3131
+K3preset1=1 K3preset4=1 K3preset8=1 12362
+0  3106
+K3preset1=1 K3preset4=1 K4preset1=1 13253
+0  3823
+K3preset1=1 K3preset4=1 K4preset2=1 13460
+0  3864
+K3preset1=1 K3preset4=1 K4preset4=1 12705
+0  3377
+K3preset1=1 K3preset4=1 K4preset5=1 12277
+0  3560
+K3preset1=1 K3preset4=1 K4preset7=1 12405
+0  3315
+K3preset1=1 K3preset5=1 K3preset6=1 16114
+0  4783
+K3preset1=1 K3preset5=1 K3preset7=1 13994
+0  3657
+K3preset1=1 K3preset5=1 K3preset8=1 14842
+0  3836
+K3preset1=1 K3preset5=1 K4preset1=1 15607
+0  4630
+K3preset1=1 K3preset5=1 K4preset2=1 15979
+0  4967
+K3preset1=1 K3preset5=1 K4preset3=1 15478
+0  4598
+K3preset1=1 K3preset5=1 K4preset4=1 15960
+0  4843
+K3preset1=1 K3preset5=1 K4preset5=1 11836
+0  3464
+K3preset1=1 K3preset5=1 K4preset6=1 11915
+0  3639
+K3preset1=1 K3preset5=1 K4preset7=1 14614
+0  4220
+K3preset1=1 K3preset5=1 K5preset5=1 10057
+0  3576
+K3preset1=1 K3preset5=1 K6preset7=1 10754
+0  3771
+K3preset1=1 K3preset6=1 K3preset7=1 12596
+0  3179
+K3preset1=1 K3preset6=1 K3preset8=1 13849
+0  3628
+K3preset1=1 K3preset6=1 K4preset1=1 15038
+0  4324
+K3preset1=1 K3preset6=1 K4preset2=1 15512
+0  4362
+K3preset1=1 K3preset6=1 K4preset3=1 14441
+0  4115
+K3preset1=1 K3preset6=1 K4preset4=1 14446
+0  4118
+K3preset1=1 K3preset6=1 K4preset5=1 11361
+0  3147
+K3preset1=1 K3preset6=1 K4preset6=1 10684
+0  3201
+K3preset1=1 K3preset6=1 K4preset7=1 13506
+0  4027
+K3preset1=1 K3preset6=1 K5preset5=1 9103
+0  3334
+K3preset1=1 K3preset6=1 K6preset7=1 9830
+0  3360
+K3preset1=1 K3preset7=1 K3preset8=1 13867
+0  3397
+K3preset1=1 K3preset7=1 K4preset1=1 15014
+0  4233
+K3preset1=1 K3preset7=1 K4preset2=1 15243
+0  4005
+K3preset1=1 K3preset7=1 K4preset3=1 13324
+0  3356
+K3preset1=1 K3preset7=1 K4preset4=1 14223
+0  3617
+K3preset1=1 K3preset7=1 K4preset5=1 12417
+0  3389
+K3preset1=1 K3preset7=1 K4preset7=1 14282
+0  3716
+K3preset1=1 K3preset8=1 K4preset1=1 15108
+0  4062
+K3preset1=1 K3preset8=1 K4preset2=1 14765
+0  3841
+K3preset1=1 K3preset8=1 K4preset3=1 13854
+0  3530
+K3preset1=1 K3preset8=1 K4preset4=1 14359
+0  3586
+K3preset1=1 K3preset8=1 K4preset5=1 12297
+0  3071
+K3preset1=1 K3preset8=1 K4preset7=1 14115
+0  3770
+K3preset1=1 K4preset1=1 K4preset2=1 17484
+0  4838
+K3preset1=1 K4preset1=1 K4preset3=1 14275
+0  3853
+K3preset1=1 K4preset1=1 K4preset4=1 15195
+0  4356
+K3preset1=1 K4preset1=1 K4preset5=1 13328
+0  3997
+K3preset1=1 K4preset1=1 K4preset6=1 11476
+0  3166
+K3preset1=1 K4preset1=1 K4preset7=1 15408
+0  4354
+K3preset1=1 K4preset1=1 K5preset5=1 9529
+0  3053
+K3preset1=1 K4preset1=1 K6preset7=1 9965
+0  3540
+K3preset1=1 K4preset2=1 K4preset3=1 16128
+0  4482
+K3preset1=1 K4preset2=1 K4preset4=1 17198
+0  5071
+K3preset1=1 K4preset2=1 K4preset5=1 13121
+0  3947
+K3preset1=1 K4preset2=1 K4preset6=1 12069
+0  3546
+K3preset1=1 K4preset2=1 K4preset7=1 15744
+0  4499
+K3preset1=1 K4preset2=1 K5preset5=1 10885
+0  3927
+K3preset1=1 K4preset2=1 K6preset7=1 10159
+0  3548
+K3preset1=1 K4preset3=1 K4preset4=1 15395
+0  4177
+K3preset1=1 K4preset3=1 K4preset5=1 11759
+0  3367
+K3preset1=1 K4preset3=1 K4preset6=1 10970
+0  3218
+K3preset1=1 K4preset3=1 K4preset7=1 14168
+0  3927
+K3preset1=1 K4preset3=1 K5preset5=1 9375
+0  3253
+K3preset1=1 K4preset3=1 K6preset7=1 10125
+0  3778
+K3preset1=1 K4preset4=1 K4preset5=1 12704
+0  3399
+K3preset1=1 K4preset4=1 K4preset6=1 11256
+0  3203
+K3preset1=1 K4preset4=1 K4preset7=1 14431
+0  3902
+K3preset1=1 K4preset4=1 K5preset5=1 9822
+0  3320
+K3preset1=1 K4preset4=1 K6preset7=1 9466
+0  3317
+K3preset1=1 K4preset5=1 K4preset7=1 12269
+0  3349
+K3preset1=1 K4preset7=1 K6preset7=1 8986
+0  3292
+K3preset3=1 K3preset4=1 K3preset5=1 13639
+0  3522
+K3preset3=1 K3preset4=1 K4preset1=1 13679
+0  3454
+K3preset3=1 K3preset4=1 K4preset2=1 12630
+0  3314
+K3preset3=1 K3preset4=1 K4preset4=1 13477
+0  3166
+K3preset3=1 K3preset4=1 K4preset5=1 12858
+0  3258
+K3preset3=1 K3preset5=1 K3preset6=1 12639
+0  3118
+K3preset3=1 K3preset5=1 K3preset7=1 14498
+0  3678
+K3preset3=1 K3preset5=1 K3preset8=1 14334
+0  3602
+K3preset3=1 K3preset5=1 K4preset1=1 15312
+0  4015
+K3preset3=1 K3preset5=1 K4preset2=1 13370
+0  3629
+K3preset3=1 K3preset5=1 K4preset3=1 13917
+0  3428
+K3preset3=1 K3preset5=1 K4preset4=1 14574
+0  3695
+K3preset3=1 K3preset5=1 K4preset5=1 13529
+0  3874
+K3preset3=1 K3preset5=1 K4preset7=1 12492
+0  3385
+K3preset3=1 K3preset6=1 K4preset1=1 13777
+0  3384
+K3preset3=1 K3preset6=1 K4preset2=1 12104
+0  3008
+K3preset3=1 K3preset6=1 K4preset4=1 12157
+0  3122
+K3preset3=1 K3preset6=1 K4preset5=1 11694
+0  3121
+K3preset3=1 K3preset7=1 K3preset8=1 14158
+0  3283
+K3preset3=1 K3preset7=1 K4preset1=1 14996
+0  3557
+K3preset3=1 K3preset7=1 K4preset2=1 13716
+0  3439
+K3preset3=1 K3preset7=1 K4preset3=1 13956
+0  3108
+K3preset3=1 K3preset7=1 K4preset4=1 14758
+0  3285
+K3preset3=1 K3preset7=1 K4preset5=1 13993
+0  3679
+K3preset3=1 K3preset7=1 K4preset7=1 13041
+0  3059
+K3preset3=1 K3preset8=1 K4preset1=1 14377
+0  3509
+K3preset3=1 K3preset8=1 K4preset2=1 13193
+0  3209
+K3preset3=1 K3preset8=1 K4preset3=1 13505
+0  3049
+K3preset3=1 K3preset8=1 K4preset4=1 14487
+0  3192
+K3preset3=1 K3preset8=1 K4preset5=1 13325
+0  3400
+K3preset3=1 K3preset8=1 K4preset7=1 12284
+0  3098
+K3preset3=1 K4preset1=1 K4preset2=1 15734
+0  4147
+K3preset3=1 K4preset1=1 K4preset3=1 14188
+0  3218
+K3preset3=1 K4preset1=1 K4preset4=1 15138
+0  3923
+K3preset3=1 K4preset1=1 K4preset5=1 14866
+0  4121
+K3preset3=1 K4preset1=1 K4preset7=1 13907
+0  3505
+K3preset3=1 K4preset2=1 K4preset3=1 13700
+0  3307
+K3preset3=1 K4preset2=1 K4preset4=1 14381
+0  3675
+K3preset3=1 K4preset2=1 K4preset5=1 13767
+0  3880
+K3preset3=1 K4preset2=1 K4preset7=1 12429
+0  3275
+K3preset3=1 K4preset3=1 K4preset4=1 14267
+0  3063
+K3preset3=1 K4preset3=1 K4preset5=1 13575
+0  3379
+K3preset3=1 K4preset4=1 K4preset5=1 14332
+0  3585
+K3preset3=1 K4preset5=1 K4preset7=1 12756
+0  3291
+K3preset4=1 K3preset5=1 K3preset6=1 14117
+0  3864
+K3preset4=1 K3preset5=1 K3preset7=1 15685
+0  4048
+K3preset4=1 K3preset5=1 K3preset8=1 15067
+0  3938
+K3preset4=1 K3preset5=1 K4preset1=1 17230
+0  4776
+K3preset4=1 K3preset5=1 K4preset2=1 15406
+0  4768
+K3preset4=1 K3preset5=1 K4preset3=1 14703
+0  3885
+K3preset4=1 K3preset5=1 K4preset4=1 16082
+0  4526
+K3preset4=1 K3preset5=1 K4preset5=1 14274
+0  4358
+K3preset4=1 K3preset5=1 K4preset7=1 14614
+0  3993
+K3preset4=1 K3preset5=1 K6preset7=1 9384
+0  3661
+K3preset4=1 K3preset6=1 K3preset7=1 12982
+0  3301
+K3preset4=1 K3preset6=1 K4preset1=1 14952
+0  4040
+K3preset4=1 K3preset6=1 K4preset2=1 13416
+0  3633
+K3preset4=1 K3preset6=1 K4preset3=1 12496
+0  3071
+K3preset4=1 K3preset6=1 K4preset4=1 12865
+0  3472
+K3preset4=1 K3preset6=1 K4preset5=1 12353
+0  3418
+K3preset4=1 K3preset6=1 K4preset7=1 12990
+0  3403
+K3preset4=1 K3preset7=1 K3preset8=1 14825
+0  3483
+K3preset4=1 K3preset7=1 K4preset1=1 16187
+0  4082
+K3preset4=1 K3preset7=1 K4preset2=1 15578
+0  3946
+K3preset4=1 K3preset7=1 K4preset3=1 14406
+0  3348
+K3preset4=1 K3preset7=1 K4preset4=1 15535
+0  3685
+K3preset4=1 K3preset7=1 K4preset5=1 14550
+0  3872
+K3preset4=1 K3preset7=1 K4preset7=1 14763
+0  3706
+K3preset4=1 K3preset8=1 K4preset1=1 15418
+0  3942
+K3preset4=1 K3preset8=1 K4preset2=1 13850
+0  3561
+K3preset4=1 K3preset8=1 K4preset3=1 13869
+0  3354
+K3preset4=1 K3preset8=1 K4preset4=1 14640
+0  3430
+K3preset4=1 K3preset8=1 K4preset5=1 13439
+0  3578
+K3preset4=1 K3preset8=1 K4preset7=1 13464
+0  3374
+K3preset4=1 K4preset1=1 K4preset2=1 16861
+0  4751
+K3preset4=1 K4preset1=1 K4preset3=1 14914
+0  3915
+K3preset4=1 K4preset1=1 K4preset4=1 16447
+0  4705
+K3preset4=1 K4preset1=1 K4preset5=1 15422
+0  4551
+K3preset4=1 K4preset1=1 K4preset7=1 15707
+0  4310
+K3preset4=1 K4preset1=1 K6preset7=1 9586
+0  3608
+K3preset4=1 K4preset2=1 K4preset3=1 14498
+0  3821
+K3preset4=1 K4preset2=1 K4preset4=1 15717
+0  4571
+K3preset4=1 K4preset2=1 K4preset5=1 14499
+0  4407
+K3preset4=1 K4preset2=1 K4preset7=1 14224
+0  3823
+K3preset4=1 K4preset2=1 K6preset7=1 8819
+0  3371
+K3preset4=1 K4preset3=1 K4preset4=1 14400
+0  3532
+K3preset4=1 K4preset3=1 K4preset5=1 13693
+0  3784
+K3preset4=1 K4preset3=1 K4preset7=1 13561
+0  3122
+K3preset4=1 K4preset3=1 K6preset7=1 8438
+0  3207
+K3preset4=1 K4preset4=1 K4preset5=1 14784
+0  4183
+K3preset4=1 K4preset4=1 K4preset7=1 14770
+0  3515
+K3preset4=1 K4preset4=1 K6preset7=1 8625
+0  3227
+K3preset4=1 K4preset5=1 K4preset7=1 13482
+0  3616
+K3preset4=1 K4preset5=1 K6preset7=1 7560
+0  3333
+K3preset4=1 K4preset7=1 K6preset7=1 7967
+0  3176
+K3preset5=1 K3preset6=1 K3preset7=1 15493
+0  3918
+K3preset5=1 K3preset6=1 K3preset8=1 17181
+0  4239
+K3preset5=1 K3preset6=1 K4preset1=1 18627
+0  5022
+K3preset5=1 K3preset6=1 K4preset2=1 18304
+0  5097
+K3preset5=1 K3preset6=1 K4preset3=1 18142
+0  4893
+K3preset5=1 K3preset6=1 K4preset4=1 18970
+0  5347
+K3preset5=1 K3preset6=1 K4preset5=1 13451
+0  4037
+K3preset5=1 K3preset6=1 K4preset6=1 14380
+0  3849
+K3preset5=1 K3preset6=1 K4preset7=1 16400
+0  4456
+K3preset5=1 K3preset6=1 K5preset5=1 11519
+0  3592
+K3preset5=1 K3preset6=1 K6preset7=1 12161
+0  4217
+K3preset5=1 K3preset7=1 K3preset8=1 17180
+0  4314
+K3preset5=1 K3preset7=1 K4preset1=1 18646
+0  4944
+K3preset5=1 K3preset7=1 K4preset2=1 16828
+0  4593
+K3preset5=1 K3preset7=1 K4preset3=1 16825
+0  4467
+K3preset5=1 K3preset7=1 K4preset4=1 17634
+0  4497
+K3preset5=1 K3preset7=1 K4preset5=1 14986
+0  4413
+K3preset5=1 K3preset7=1 K4preset6=1 13240
+0  3247
+K3preset5=1 K3preset7=1 K4preset7=1 15963
+0  4244
+K3preset5=1 K3preset7=1 K6preset7=1 10270
+0  3385
+K3preset5=1 K3preset8=1 K4preset1=1 18728
+0  4965
+K3preset5=1 K3preset8=1 K4preset2=1 16894
+0  4370
+K3preset5=1 K3preset8=1 K4preset3=1 17341
+0  4769
+K3preset5=1 K3preset8=1 K4preset4=1 18854
+0  4707
+K3preset5=1 K3preset8=1 K4preset5=1 14812
+0  4093
+K3preset5=1 K3preset8=1 K4preset6=1 12989
+0  3221
+K3preset5=1 K3preset8=1 K4preset7=1 17000
+0  4550
+K3preset5=1 K3preset8=1 K5preset5=1 10727
+0  3031
+K3preset5=1 K3preset8=1 K6preset7=1 10738
+0  3671
+K3preset5=1 K4preset1=1 K4preset2=1 19766
+0  5442
+K3preset5=1 K4preset1=1 K4preset3=1 18354
+0  5016
+K3preset5=1 K4preset1=1 K4preset4=1 19877
+0  5870
+K3preset5=1 K4preset1=1 K4preset5=1 15470
+0  4924
+K3preset5=1 K4preset1=1 K4preset6=1 14484
+0  3746
+K3preset5=1 K4preset1=1 K4preset7=1 18479
+0  4963
+K3preset5=1 K4preset1=1 K5preset3=1 9760
+0  3100
+K3preset5=1 K4preset1=1 K5preset5=1 11683
+0  3283
+K3preset5=1 K4preset1=1 K6preset7=1 11515
+0  4293
+K3preset5=1 K4preset2=1 K4preset3=1 19337
+0  5488
+K3preset5=1 K4preset2=1 K4preset4=1 20070
+0  5892
+K3preset5=1 K4preset2=1 K4preset5=1 14547
+0  4865
+K3preset5=1 K4preset2=1 K4preset6=1 13907
+0  3928
+K3preset5=1 K4preset2=1 K4preset7=1 16747
+0  4735
+K3preset5=1 K4preset2=1 K5preset3=1 9755
+0  3016
+K3preset5=1 K4preset2=1 K5preset5=1 12072
+0  3970
+K3preset5=1 K4preset2=1 K6preset7=1 12209
+0  4503
+K3preset5=1 K4preset3=1 K4preset4=1 20364
+0  5792
+K3preset5=1 K4preset3=1 K4preset5=1 14361
+0  4626
+K3preset5=1 K4preset3=1 K4preset6=1 15242
+0  4292
+K3preset5=1 K4preset3=1 K4preset7=1 16818
+0  4698
+K3preset5=1 K4preset3=1 K5preset1=1 10198
+0  3090
+K3preset5=1 K4preset3=1 K5preset2=1 10863
+0  3718
+K3preset5=1 K4preset3=1 K5preset3=1 10467
+0  3609
+K3preset5=1 K4preset3=1 K5preset5=1 12377
+0  4419
+K3preset5=1 K4preset3=1 K5preset8=1 10463
+0  3309
+K3preset5=1 K4preset3=1 K6preset4=1 10703
+0  3449
+K3preset5=1 K4preset3=1 K6preset7=1 13569
+0  5173
+K3preset5=1 K4preset4=1 K4preset5=1 15086
+0  4571
+K3preset5=1 K4preset4=1 K4preset6=1 15000
+0  4055
+K3preset5=1 K4preset4=1 K4preset7=1 17483
+0  4832
+K3preset5=1 K4preset4=1 K5preset3=1 8996
+0  3106
+K3preset5=1 K4preset4=1 K5preset5=1 12040
+0  3573
+K3preset5=1 K4preset4=1 K5preset8=1 9844
+0  3035
+K3preset5=1 K4preset4=1 K6preset7=1 12846
+0  4743
+K3preset5=1 K4preset5=1 K4preset6=1 11390
+0  3461
+K3preset5=1 K4preset5=1 K4preset7=1 13144
+0  3996
+K3preset5=1 K4preset5=1 K6preset7=1 8651
+0  3819
+K3preset5=1 K4preset6=1 K4preset7=1 12218
+0  3289
+K3preset5=1 K4preset6=1 K5preset5=1 9687
+0  3287
+K3preset5=1 K4preset6=1 K6preset7=1 10476
+0  3715
+K3preset5=1 K4preset7=1 K6preset7=1 10634
+0  3992
+K3preset5=1 K5preset2=1 K6preset7=1 8044
+0  3448
+K3preset5=1 K5preset3=1 K6preset7=1 8474
+0  3572
+K3preset5=1 K5preset5=1 K6preset7=1 9029
+0  3756
+K3preset5=1 K6preset1=1 K6preset7=1 6372
+0  3014
+K3preset5=1 K6preset3=1 K6preset7=1 8223
+0  3041
+K3preset6=1 K3preset7=1 K3preset8=1 14835
+0  3771
+K3preset6=1 K3preset7=1 K4preset1=1 16498
+0  4266
+K3preset6=1 K3preset7=1 K4preset2=1 15021
+0  3853
+K3preset6=1 K3preset7=1 K4preset3=1 14834
+0  3531
+K3preset6=1 K3preset7=1 K4preset4=1 14453
+0  3674
+K3preset6=1 K3preset7=1 K4preset5=1 13012
+0  3647
+K3preset6=1 K3preset7=1 K4preset7=1 14109
+0  3752
+K3preset6=1 K3preset8=1 K4preset1=1 17635
+0  4404
+K3preset6=1 K3preset8=1 K4preset2=1 16046
+0  3737
+K3preset6=1 K3preset8=1 K4preset3=1 15868
+0  4128
+K3preset6=1 K3preset8=1 K4preset4=1 15800
+0  4039
+K3preset6=1 K3preset8=1 K4preset5=1 13252
+0  3631
+K3preset6=1 K3preset8=1 K4preset7=1 15789
+0  4270
+K3preset6=1 K3preset8=1 K6preset7=1 9938
+0  3243
+K3preset6=1 K4preset1=1 K4preset2=1 18992
+0  4817
+K3preset6=1 K4preset1=1 K4preset3=1 17026
+0  4131
+K3preset6=1 K4preset1=1 K4preset4=1 17146
+0  4825
+K3preset6=1 K4preset1=1 K4preset5=1 14822
+0  4258
+K3preset6=1 K4preset1=1 K4preset6=1 12856
+0  3228
+K3preset6=1 K4preset1=1 K4preset7=1 17478
+0  4644
+K3preset6=1 K4preset1=1 K5preset5=1 10273
+0  3055
+K3preset6=1 K4preset1=1 K6preset7=1 10442
+0  3785
+K3preset6=1 K4preset2=1 K4preset3=1 18436
+0  4654
+K3preset6=1 K4preset2=1 K4preset4=1 17642
+0  4954
+K3preset6=1 K4preset2=1 K4preset5=1 13358
+0  3758
+K3preset6=1 K4preset2=1 K4preset6=1 13072
+0  3485
+K3preset6=1 K4preset2=1 K4preset7=1 15768
+0  4241
+K3preset6=1 K4preset2=1 K5preset5=1 11024
+0  3610
+K3preset6=1 K4preset2=1 K6preset7=1 11379
+0  3793
+K3preset6=1 K4preset3=1 K4preset4=1 17830
+0  4767
+K3preset6=1 K4preset3=1 K4preset5=1 13037
+0  3869
+K3preset6=1 K4preset3=1 K4preset6=1 12681
+0  3179
+K3preset6=1 K4preset3=1 K4preset7=1 15507
+0  4200
+K3preset6=1 K4preset3=1 K5preset5=1 9984
+0  3373
+K3preset6=1 K4preset3=1 K6preset7=1 11178
+0  4010
+K3preset6=1 K4preset4=1 K4preset5=1 12942
+0  3741
+K3preset6=1 K4preset4=1 K4preset6=1 12907
+0  3585
+K3preset6=1 K4preset4=1 K4preset7=1 15237
+0  3941
+K3preset6=1 K4preset4=1 K5preset5=1 9920
+0  3182
+K3preset6=1 K4preset4=1 K6preset7=1 10659
+0  3863
+K3preset6=1 K4preset5=1 K4preset7=1 12213
+0  3497
+K3preset6=1 K4preset5=1 K6preset7=1 7521
+0  3085
+K3preset6=1 K4preset7=1 K6preset7=1 9649
+0  3524
+K3preset7=1 K3preset8=1 K4preset1=1 17833
+0  4588
+K3preset7=1 K3preset8=1 K4preset2=1 17122
+0  4070
+K3preset7=1 K3preset8=1 K4preset3=1 16897
+0  4337
+K3preset7=1 K3preset8=1 K4preset4=1 17469
+0  4017
+K3preset7=1 K3preset8=1 K4preset5=1 15141
+0  4167
+K3preset7=1 K3preset8=1 K4preset7=1 15575
+0  3900
+K3preset7=1 K3preset8=1 K6preset7=1 9794
+0  3166
+K3preset7=1 K4preset1=1 K4preset2=1 19647
+0  5203
+K3preset7=1 K4preset1=1 K4preset3=1 17891
+0  4419
+K3preset7=1 K4preset1=1 K4preset4=1 18717
+0  5064
+K3preset7=1 K4preset1=1 K4preset5=1 15961
+0  4649
+K3preset7=1 K4preset1=1 K4preset6=1 13790
+0  3250
+K3preset7=1 K4preset1=1 K4preset7=1 17851
+0  4769
+K3preset7=1 K4preset1=1 K5preset3=1 8759
+0  3030
+K3preset7=1 K4preset1=1 K5preset5=1 11273
+0  3106
+K3preset7=1 K4preset1=1 K6preset7=1 10298
+0  3591
+K3preset7=1 K4preset2=1 K4preset3=1 17693
+0  4458
+K3preset7=1 K4preset2=1 K4preset4=1 18198
+0  4780
+K3preset7=1 K4preset2=1 K4preset5=1 15502
+0  4364
+K3preset7=1 K4preset2=1 K4preset7=1 16763
+0  4453
+K3preset7=1 K4preset2=1 K5preset5=1 10580
+0  3092
+K3preset7=1 K4preset2=1 K6preset7=1 9588
+0  3267
+K3preset7=1 K4preset3=1 K4preset4=1 17223
+0  4161
+K3preset7=1 K4preset3=1 K4preset5=1 14706
+0  4140
+K3preset7=1 K4preset3=1 K4preset7=1 15970
+0  4057
+K3preset7=1 K4preset3=1 K5preset5=1 10050
+0  3098
+K3preset7=1 K4preset3=1 K6preset7=1 9799
+0  3253
+K3preset7=1 K4preset4=1 K4preset5=1 15251
+0  4130
+K3preset7=1 K4preset4=1 K4preset7=1 16527
+0  4112
+K3preset7=1 K4preset4=1 K6preset7=1 9405
+0  3023
+K3preset7=1 K4preset5=1 K4preset6=1 10996
+0  3011
+K3preset7=1 K4preset5=1 K4preset7=1 14198
+0  3910
+K3preset7=1 K4preset5=1 K6preset7=1 8100
+0  3099
+K3preset7=1 K4preset7=1 K6preset7=1 9075
+0  3337
+K3preset8=1 K4preset1=1 K4preset2=1 19549
+0  4802
+K3preset8=1 K4preset1=1 K4preset3=1 17559
+0  4525
+K3preset8=1 K4preset1=1 K4preset4=1 18141
+0  4734
+K3preset8=1 K4preset1=1 K4preset5=1 15706
+0  4499
+K3preset8=1 K4preset1=1 K4preset6=1 12811
+0  3104
+K3preset8=1 K4preset1=1 K4preset7=1 18179
+0  4688
+K3preset8=1 K4preset1=1 K5preset5=1 10792
+0  3027
+K3preset8=1 K4preset1=1 K6preset7=1 11040
+0  3819
+K3preset8=1 K4preset2=1 K4preset3=1 17841
+0  4300
+K3preset8=1 K4preset2=1 K4preset4=1 17815
+0  4352
+K3preset8=1 K4preset2=1 K4preset5=1 14890
+0  3911
+K3preset8=1 K4preset2=1 K4preset7=1 16500
+0  4061
+K3preset8=1 K4preset2=1 K5preset5=1 10722
+0  3064
+K3preset8=1 K4preset2=1 K6preset7=1 10124
+0  3352
+K3preset8=1 K4preset3=1 K4preset4=1 17620
+0  4339
+K3preset8=1 K4preset3=1 K4preset5=1 14500
+0  4097
+K3preset8=1 K4preset3=1 K4preset7=1 16389
+0  4359
+K3preset8=1 K4preset3=1 K5preset5=1 9809
+0  3104
+K3preset8=1 K4preset3=1 K6preset7=1 10338
+0  3776
+K3preset8=1 K4preset4=1 K4preset5=1 15091
+0  3777
+K3preset8=1 K4preset4=1 K4preset7=1 16902
+0  4080
+K3preset8=1 K4preset4=1 K6preset7=1 10263
+0  3642
+K3preset8=1 K4preset5=1 K4preset7=1 13642
+0  3639
+K3preset8=1 K4preset5=1 K6preset7=1 7765
+0  3041
+K3preset8=1 K4preset7=1 K6preset7=1 9553
+0  3485
+K4preset1=1 K4preset2=1 K4preset3=1 20672
+0  5104
+K4preset1=1 K4preset2=1 K4preset4=1 21411
+0  6092
+K4preset1=1 K4preset2=1 K4preset5=1 18163
+0  5349
+K4preset1=1 K4preset2=1 K4preset6=1 14656
+0  3702
+K4preset1=1 K4preset2=1 K4preset7=1 21239
+0  5419
+K4preset1=1 K4preset2=1 K5preset1=1 10336
+0  3095
+K4preset1=1 K4preset2=1 K5preset2=1 11094
+0  3142
+K4preset1=1 K4preset2=1 K5preset3=1 10546
+0  3420
+K4preset1=1 K4preset2=1 K5preset5=1 13464
+0  3910
+K4preset1=1 K4preset2=1 K6preset7=1 12771
+0  4598
+K4preset1=1 K4preset3=1 K4preset4=1 19513
+0  5003
+K4preset1=1 K4preset3=1 K4preset5=1 16325
+0  4590
+K4preset1=1 K4preset3=1 K4preset6=1 13533
+0  3177
+K4preset1=1 K4preset3=1 K4preset7=1 19111
+0  4668
+K4preset1=1 K4preset3=1 K5preset5=1 11530
+0  3473
+K4preset1=1 K4preset3=1 K6preset7=1 10995
+0  4027
+K4preset1=1 K4preset4=1 K4preset5=1 17506
+0  5281
+K4preset1=1 K4preset4=1 K4preset6=1 14824
+0  3807
+K4preset1=1 K4preset4=1 K4preset7=1 19612
+0  4997
+K4preset1=1 K4preset4=1 K5preset2=1 10673
+0  3341
+K4preset1=1 K4preset4=1 K5preset3=1 8871
+0  3128
+K4preset1=1 K4preset4=1 K5preset5=1 12227
+0  3556
+K4preset1=1 K4preset4=1 K6preset7=1 11528
+0  4524
+K4preset1=1 K4preset5=1 K4preset6=1 12558
+0  3472
+K4preset1=1 K4preset5=1 K4preset7=1 16126
+0  4509
+K4preset1=1 K4preset5=1 K5preset5=1 9391
+0  3171
+K4preset1=1 K4preset5=1 K6preset7=1 9457
+0  4036
+K4preset1=1 K4preset6=1 K4preset7=1 13851
+0  3184
+K4preset1=1 K4preset7=1 K5preset2=1 9889
+0  3280
+K4preset1=1 K4preset7=1 K5preset5=1 12136
+0  3243
+K4preset1=1 K4preset7=1 K6preset7=1 11260
+0  4385
+K4preset1=1 K5preset2=1 K6preset7=1 7274
+0  3051
+K4preset2=1 K4preset3=1 K4preset4=1 22011
+0  5983
+K4preset2=1 K4preset3=1 K4preset5=1 15825
+0  4532
+K4preset2=1 K4preset3=1 K4preset6=1 14377
+0  3561
+K4preset2=1 K4preset3=1 K4preset7=1 18423
+0  4703
+K4preset2=1 K4preset3=1 K5preset2=1 10019
+0  3076
+K4preset2=1 K4preset3=1 K5preset3=1 9376
+0  3042
+K4preset2=1 K4preset3=1 K5preset5=1 12762
+0  4006
+K4preset2=1 K4preset3=1 K6preset7=1 12645
+0  4539
+K4preset2=1 K4preset4=1 K4preset5=1 16912
+0  5093
+K4preset2=1 K4preset4=1 K4preset6=1 14836
+0  3964
+K4preset2=1 K4preset4=1 K4preset7=1 18585
+0  5213
+K4preset2=1 K4preset4=1 K5preset2=1 11241
+0  3229
+K4preset2=1 K4preset4=1 K5preset3=1 9206
+0  3112
+K4preset2=1 K4preset4=1 K5preset5=1 12269
+0  4003
+K4preset2=1 K4preset4=1 K5preset8=1 10487
+0  3088
+K4preset2=1 K4preset4=1 K6preset7=1 12396
+0  4726
+K4preset2=1 K4preset5=1 K4preset6=1 10981
+0  3256
+K4preset2=1 K4preset5=1 K4preset7=1 14992
+0  4161
+K4preset2=1 K4preset5=1 K5preset5=1 9338
+0  3204
+K4preset2=1 K4preset5=1 K6preset7=1 8792
+0  3768
+K4preset2=1 K4preset6=1 K4preset7=1 12948
+0  3067
+K4preset2=1 K4preset6=1 K6preset7=1 9472
+0  3131
+K4preset2=1 K4preset7=1 K5preset5=1 11425
+0  3288
+K4preset2=1 K4preset7=1 K6preset7=1 10758
+0  3872
+K4preset2=1 K5preset5=1 K6preset7=1 8199
+0  3481
+K4preset3=1 K4preset4=1 K4preset5=1 16178
+0  4492
+K4preset3=1 K4preset4=1 K4preset6=1 14637
+0  3804
+K4preset3=1 K4preset4=1 K4preset7=1 18692
+0  4883
+K4preset3=1 K4preset4=1 K5preset2=1 10609
+0  3210
+K4preset3=1 K4preset4=1 K5preset3=1 8974
+0  3049
+K4preset3=1 K4preset4=1 K5preset5=1 12101
+0  3877
+K4preset3=1 K4preset4=1 K5preset6=1 9925
+0  3049
+K4preset3=1 K4preset4=1 K5preset8=1 10572
+0  3127
+K4preset3=1 K4preset4=1 K6preset7=1 12335
+0  4566
+K4preset3=1 K4preset5=1 K4preset6=1 11178
+0  3016
+K4preset3=1 K4preset5=1 K4preset7=1 14374
+0  3930
+K4preset3=1 K4preset5=1 K5preset5=1 9157
+0  3305
+K4preset3=1 K4preset5=1 K6preset7=1 8527
+0  3734
+K4preset3=1 K4preset6=1 K4preset7=1 13014
+0  3124
+K4preset3=1 K4preset6=1 K5preset5=1 9342
+0  3294
+K4preset3=1 K4preset6=1 K6preset7=1 9998
+0  3564
+K4preset3=1 K4preset7=1 K5preset2=1 9081
+0  3104
+K4preset3=1 K4preset7=1 K5preset5=1 10474
+0  3219
+K4preset3=1 K4preset7=1 K6preset7=1 10436
+0  4040
+K4preset3=1 K5preset1=1 K6preset7=1 7715
+0  3223
+K4preset3=1 K5preset2=1 K5preset5=1 8172
+0  3173
+K4preset3=1 K5preset2=1 K6preset5=1 6097
+0  3024
+K4preset3=1 K5preset2=1 K6preset7=1 8387
+0  3730
+K4preset3=1 K5preset3=1 K6preset7=1 8342
+0  3757
+K4preset3=1 K5preset5=1 K6preset7=1 8993
+0  3974
+K4preset3=1 K5preset8=1 K6preset7=1 7441
+0  3220
+K4preset3=1 K6preset4=1 K6preset7=1 8300
+0  3192
+K4preset3=1 K6preset5=1 K6preset7=1 7133
+0  3224
+K4preset3=1 K6preset6=1 K6preset7=1 6319
+0  3008
+K4preset4=1 K4preset5=1 K4preset6=1 11799
+0  3237
+K4preset4=1 K4preset5=1 K4preset7=1 14760
+0  3839
+K4preset4=1 K4preset5=1 K5preset5=1 9369
+0  3040
+K4preset4=1 K4preset5=1 K6preset7=1 8697
+0  3783
+K4preset4=1 K4preset6=1 K4preset7=1 13026
+0  3188
+K4preset4=1 K4preset6=1 K6preset7=1 9039
+0  3192
+K4preset4=1 K4preset7=1 K6preset7=1 9726
+0  3776
+K4preset4=1 K5preset5=1 K6preset7=1 7575
+0  3121
+K4preset4=1 K5preset8=1 K6preset7=1 6775
+0  3048
+K4preset5=1 K4preset7=1 K6preset7=1 7592
+0  3313
+K4preset6=1 K5preset5=1 K6preset7=1 7975
+0  3451
+K5preset1=1 K5preset2=1 K6preset7=1 7261
+0  3031
+K5preset1=1 K5preset3=1 K6preset7=1 7189
+0  3075
+K5preset2=1 K5preset3=1 K6preset7=1 7408
+0  3564
+K5preset2=1 K5preset5=1 K6preset7=1 8025
+0  3621
+K5preset2=1 K6preset3=1 K6preset7=1 7067
+0  3038
+K5preset3=1 K5preset5=1 K6preset7=1 8403
+0  4009
+K5preset3=1 K5preset6=1 K6preset7=1 6995
+0  3191
+K5preset3=1 K5preset7=1 K6preset2=1 7198
+0  3005
+K5preset3=1 K5preset7=1 K6preset7=1 6977
+0  3166
+K5preset3=1 K6preset1=1 K6preset7=1 6404
+0  3024
+K5preset3=1 K6preset2=1 K6preset7=1 7001
+0  3277
+K5preset3=1 K6preset3=1 K6preset7=1 7091
+0  3095
+K5preset3=1 K6preset5=1 K6preset7=1 6305
+0  3259
+K5preset5=1 K5preset6=1 K6preset7=1 7968
+0  3230
+K5preset5=1 K6preset1=1 K6preset7=1 6567
+0  3376
+K5preset5=1 K6preset3=1 K6preset7=1 7219
+0  3295
+K5preset6=1 K6preset1=1 K6preset7=1 6965
+0  3018
+
+Size of set of large itemsets L(4): 71
+
+Large Itemsets L(4):
+K2preset7=1 K4preset1=1 K4preset2=1 K4preset4=1 9993
+0  3091
+K3preset1=1 K3preset5=1 K4preset1=1 K4preset2=1 9859
+0  3003
+K3preset1=1 K3preset5=1 K4preset1=1 K4preset4=1 9191
+0  3035
+K3preset1=1 K3preset5=1 K4preset2=1 K4preset4=1 9846
+0  3270
+K3preset1=1 K4preset1=1 K4preset2=1 K4preset4=1 10032
+0  3102
+K3preset4=1 K3preset5=1 K4preset1=1 K4preset2=1 10376
+0  3298
+K3preset4=1 K3preset5=1 K4preset1=1 K4preset4=1 10492
+0  3419
+K3preset4=1 K3preset5=1 K4preset1=1 K4preset5=1 9391
+0  3057
+K3preset4=1 K3preset5=1 K4preset2=1 K4preset4=1 9725
+0  3332
+K3preset4=1 K3preset5=1 K4preset2=1 K4preset5=1 8920
+0  3250
+K3preset4=1 K4preset1=1 K4preset2=1 K4preset4=1 10236
+0  3331
+K3preset4=1 K4preset1=1 K4preset2=1 K4preset5=1 9700
+0  3165
+K3preset4=1 K4preset1=1 K4preset4=1 K4preset5=1 9363
+0  3069
+K3preset4=1 K4preset2=1 K4preset4=1 K4preset5=1 9187
+0  3030
+K3preset5=1 K3preset6=1 K4preset1=1 K4preset4=1 10781
+0  3441
+K3preset5=1 K3preset6=1 K4preset2=1 K4preset4=1 10626
+0  3237
+K3preset5=1 K3preset6=1 K4preset3=1 K4preset4=1 10857
+0  3182
+K3preset5=1 K3preset7=1 K3preset8=1 K4preset1=1 11264
+0  3149
+K3preset5=1 K3preset7=1 K3preset8=1 K4preset3=1 10462
+0  3014
+K3preset5=1 K3preset7=1 K4preset1=1 K4preset2=1 11437
+0  3352
+K3preset5=1 K3preset7=1 K4preset1=1 K4preset3=1 10918
+0  3121
+K3preset5=1 K3preset7=1 K4preset1=1 K4preset4=1 11505
+0  3462
+K3preset5=1 K3preset7=1 K4preset1=1 K4preset5=1 9764
+0  3156
+K3preset5=1 K3preset7=1 K4preset1=1 K4preset7=1 10537
+0  3055
+K3preset5=1 K3preset7=1 K4preset2=1 K4preset4=1 10626
+0  3083
+K3preset5=1 K3preset7=1 K4preset2=1 K4preset5=1 9282
+0  3079
+K3preset5=1 K3preset8=1 K4preset1=1 K4preset2=1 11572
+0  3142
+K3preset5=1 K3preset8=1 K4preset1=1 K4preset3=1 10673
+0  3178
+K3preset5=1 K3preset8=1 K4preset1=1 K4preset4=1 11721
+0  3439
+K3preset5=1 K3preset8=1 K4preset1=1 K4preset5=1 9597
+0  3042
+K3preset5=1 K3preset8=1 K4preset1=1 K4preset7=1 11239
+0  3168
+K3preset5=1 K3preset8=1 K4preset3=1 K4preset4=1 10989
+0  3081
+K3preset5=1 K4preset1=1 K4preset2=1 K4preset3=1 11299
+0  3237
+K3preset5=1 K4preset1=1 K4preset2=1 K4preset4=1 12327
+0  3906
+K3preset5=1 K4preset1=1 K4preset2=1 K4preset5=1 9918
+0  3482
+K3preset5=1 K4preset1=1 K4preset2=1 K4preset7=1 11395
+0  3163
+K3preset5=1 K4preset1=1 K4preset3=1 K4preset4=1 11226
+0  3516
+K3preset5=1 K4preset1=1 K4preset3=1 K4preset5=1 9021
+0  3189
+K3preset5=1 K4preset1=1 K4preset4=1 K4preset5=1 9653
+0  3416
+K3preset5=1 K4preset1=1 K4preset4=1 K4preset7=1 11087
+0  3260
+K3preset5=1 K4preset1=1 K4preset4=1 K6preset7=1 7415
+0  3016
+K3preset5=1 K4preset2=1 K4preset3=1 K4preset4=1 12509
+0  3790
+K3preset5=1 K4preset2=1 K4preset3=1 K4preset5=1 8815
+0  3123
+K3preset5=1 K4preset2=1 K4preset4=1 K4preset5=1 9395
+0  3320
+K3preset5=1 K4preset2=1 K4preset4=1 K4preset7=1 10411
+0  3223
+K3preset5=1 K4preset2=1 K4preset4=1 K6preset7=1 7868
+0  3024
+K3preset5=1 K4preset3=1 K4preset4=1 K4preset5=1 8986
+0  3022
+K3preset5=1 K4preset3=1 K4preset4=1 K4preset7=1 10193
+0  3062
+K3preset5=1 K4preset3=1 K4preset4=1 K6preset7=1 8218
+0  3198
+K3preset6=1 K4preset1=1 K4preset2=1 K4preset4=1 10394
+0  3117
+K3preset7=1 K3preset8=1 K4preset1=1 K4preset2=1 11213
+0  3068
+K3preset7=1 K3preset8=1 K4preset1=1 K4preset4=1 10830
+0  3152
+K3preset7=1 K4preset1=1 K4preset2=1 K4preset3=1 11455
+0  3034
+K3preset7=1 K4preset1=1 K4preset2=1 K4preset4=1 11868
+0  3585
+K3preset7=1 K4preset1=1 K4preset2=1 K4preset5=1 10438
+0  3135
+K3preset7=1 K4preset1=1 K4preset2=1 K4preset7=1 11102
+0  3249
+K3preset7=1 K4preset1=1 K4preset4=1 K4preset5=1 9685
+0  3094
+K3preset7=1 K4preset1=1 K4preset4=1 K4preset7=1 10753
+0  3074
+K3preset8=1 K4preset1=1 K4preset2=1 K4preset3=1 11526
+0  3031
+K3preset8=1 K4preset1=1 K4preset2=1 K4preset4=1 11255
+0  3156
+K3preset8=1 K4preset1=1 K4preset2=1 K4preset5=1 10216
+0  3016
+K4preset1=1 K4preset2=1 K4preset3=1 K4preset4=1 12374
+0  3438
+K4preset1=1 K4preset2=1 K4preset3=1 K4preset5=1 10284
+0  3200
+K4preset1=1 K4preset2=1 K4preset4=1 K4preset5=1 11245
+0  3760
+K4preset1=1 K4preset2=1 K4preset4=1 K4preset7=1 11990
+0  3515
+K4preset1=1 K4preset2=1 K4preset4=1 K6preset7=1 7664
+0  3195
+K4preset1=1 K4preset2=1 K4preset5=1 K4preset7=1 10202
+0  3014
+K4preset1=1 K4preset3=1 K4preset4=1 K4preset5=1 9930
+0  3025
+K4preset2=1 K4preset3=1 K4preset4=1 K4preset5=1 10282
+0  3201
+K4preset2=1 K4preset3=1 K4preset4=1 K4preset7=1 11207
+0  3216
+K4preset2=1 K4preset3=1 K4preset4=1 K6preset7=1 8133
+0  3158
+
+
